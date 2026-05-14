@@ -711,6 +711,56 @@ Amazon Bullet 页面标题：Free Amazon Bullet Point Generator
 sitemap URL 数量：25
 ```
 
+## 28. 工具目录质量增强记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+在 Search Console 已发现 25 个 URL 后，优化首页和 /tools/ 的信息架构，让站点更像完整产品而不是纯页面列表。
+```
+
+执行内容：
+
+```text
+首页新增工具分类跳转。
+/tools/ 工具目录改为分组结构。
+分组包括 Marketplaces、Ads & Social、Email、SEO、Brand Messaging。
+工具目录导航增加 About 和 Contact。
+工具目录 footer 增加 About 和 Contact。
+新增分类导航和分组样式。
+```
+
+影响范围：
+
+```text
+index.html
+tools/index.html
+assets/styles.css
+```
+
+验证方式：
+
+```text
+本地预览首页和 /tools/。
+确认分类锚点可用。
+确认工具卡片数量仍为 19。
+确认浏览器控制台无错误。
+```
+
+本地验证结果：
+
+```text
+首页工具卡片数量：19
+首页分类链接数量：5
+/tools/ 工具卡片数量：19
+/tools/ 分组数量：5
+/tools/ 分类链接数量：5
+Brand 分组标题：Brand Messaging Tools
+浏览器控制台错误：0
+```
+
 ## 21. 第二批 SEO 页面扩展记录
 
 操作时间：2026-05-14
