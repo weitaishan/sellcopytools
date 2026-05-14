@@ -699,3 +699,167 @@ Facebook 页面标题：Free Facebook Ad Headline Generator
 Abandoned Cart 页面标题：Free Abandoned Cart Email Generator
 浏览器控制台错误：0
 ```
+
+## 22. Cloudflare Email Routing 配置计划
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+让 contact@sellcopytools.com 可以收到邮件，并转发到常用 Gmail。
+```
+
+背景：
+
+```text
+legal/privacy.html 中已经写了 contact@sellcopytools.com。
+但这个地址目前只是页面文字，还没有收信能力。
+需要在 Cloudflare 配置 Email Routing。
+```
+
+打开的网站：
+
+```text
+https://dash.cloudflare.com/
+```
+
+进入路径：
+
+```text
+Cloudflare Dashboard
+-> 选择 sellcopytools.com
+-> Email
+-> Email Routing
+```
+
+如果新版菜单显示为：
+
+```text
+Compute
+-> Email Service
+-> Email Routing
+-> Routing Rules
+```
+
+首次启用操作：
+
+```text
+Enable Email Routing / Onboard Domain
+-> Add records and enable / Add records and onboard
+```
+
+Cloudflare 会自动添加邮件所需 DNS 记录：
+
+```text
+MX records
+TXT SPF record
+TXT DKIM record
+```
+
+创建转发地址：
+
+```text
+Routing Rules
+-> Create address
+```
+
+填写内容：
+
+```text
+Custom address: contact
+Action: Send to an email
+Destination: 常用 Gmail 地址
+```
+
+注意：
+
+```text
+Custom address 可能只需要填 contact，不要重复填完整域名。
+Destination 必须是你真实可收信的邮箱。
+Cloudflare 会给 Destination 邮箱发送验证邮件。
+必须点击验证邮件中的 Verify email address。
+```
+
+验证方式：
+
+```text
+用另一个邮箱发送测试邮件到 contact@sellcopytools.com。
+检查 Gmail 收件箱和垃圾箱。
+Cloudflare Email Routing 中查看规则状态是否 Active。
+```
+
+重要限制：
+
+```text
+Cloudflare Email Routing 只负责收信转发。
+不能直接让 Gmail 以 contact@sellcopytools.com 发信。
+如果以后需要用 contact@sellcopytools.com 发信，需要单独配置邮箱服务或 SMTP。
+```
+
+参考：
+
+```text
+https://developers.cloudflare.com/email-service/get-started/route-emails/
+https://developers.cloudflare.com/email-routing/get-started/enable-email-routing/
+```
+
+## 23. Google Search Console 重新提交 Sitemap 记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+让 Google 读取最新 sitemap，发现第二批新增 SEO 页面。
+```
+
+打开的网站：
+
+```text
+https://search.google.com/search-console
+```
+
+进入路径：
+
+```text
+Google Search Console
+-> sellcopytools.com
+-> 编制索引
+-> 站点地图
+```
+
+填写内容：
+
+```text
+https://sellcopytools.com/sitemap.xml
+```
+
+点击按钮：
+
+```text
+提交
+```
+
+结果：
+
+```text
+站点地图状态：成功
+上次读取时间：2026年5月14日
+已发现的网页：18
+已发现的视频：0
+```
+
+验证方式：
+
+```text
+Google Search Console 的“已提交的站点地图”列表显示 sitemap.xml 成功。
+```
+
+后续动作：
+
+```text
+使用“网址检查”检查核心页面。
+对首页、/tools/、几个重要工具页请求编入索引。
+等待 Google 后续抓取和收录。
+```
