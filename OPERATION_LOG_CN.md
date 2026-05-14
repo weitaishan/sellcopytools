@@ -650,3 +650,52 @@ https://sellcopytools.com/tools/product-title-generator.html
 Shopify 页面标题：Free Shopify Product Description Generator
 浏览器控制台错误：0
 ```
+
+## 21. 第二批 SEO 页面扩展记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+继续增加商业意图更强的 SEO 页面，覆盖广告、社媒、落地页和邮件恢复场景。
+```
+
+执行内容：
+
+```text
+新增 5 个细分 SEO 工具页。
+更新首页工具卡片。
+更新 /tools/ 工具目录页。
+更新 sitemap.xml。
+```
+
+新增页面：
+
+```text
+https://sellcopytools.com/tools/facebook-ad-headline-generator.html
+https://sellcopytools.com/tools/google-ad-description-generator.html
+https://sellcopytools.com/tools/instagram-caption-generator-for-products.html
+https://sellcopytools.com/tools/landing-page-headline-generator.html
+https://sellcopytools.com/tools/abandoned-cart-email-generator.html
+```
+
+验证方式：
+
+```text
+本地检查文件存在。
+检查首页和 /tools/ 页面包含新增入口。
+检查 sitemap.xml 包含新增页面。
+使用本地预览服务器打开代表页面。
+部署后打开正式 URL 验证。
+```
+
+本地验证结果：
+
+```text
+首页工具卡片数量：14
+/tools/ 工具卡片数量：14
+Facebook 页面标题：Free Facebook Ad Headline Generator
+Abandoned Cart 页面标题：Free Abandoned Cart Email Generator
+浏览器控制台错误：0
+```
