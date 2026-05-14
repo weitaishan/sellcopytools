@@ -927,6 +927,53 @@ HTML 文件数量：26
 浏览器控制台错误：0
 ```
 
+## 33. 移动端页面质量检查记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+检查手机视口下首页、工具目录和代表工具页是否能正常加载，避免移动端布局问题影响用户体验和 AdSense 审核观感。
+```
+
+测试环境：
+
+```text
+本地预览地址：http://localhost:8098
+手机视口：390 x 844
+```
+
+检查页面：
+
+```text
+首页 /
+工具目录 /tools/
+代表工具页 /tools/product-value-proposition-generator.html
+```
+
+检查结果：
+
+```text
+首页 H1：Generate product copy that is ready to sell.
+首页工具卡片数量：19
+首页分类链接数量：5
+首页生成器输出正常：是
+/tools/ H1：Free Ecommerce Copywriting Tools
+/tools/ 工具卡片数量：19
+/tools/ 分组数量：5
+/tools/ footer 链接数量：5
+代表工具页 H1：Free Product Value Proposition Generator
+代表工具页 footer 链接数量：5
+浏览器控制台错误：0
+```
+
+结论：
+
+```text
+手机视口下关键页面加载正常，导航、工具卡片、生成器输出和 footer 链接均可用。
+```
+
 ## 21. 第二批 SEO 页面扩展记录
 
 操作时间：2026-05-14
