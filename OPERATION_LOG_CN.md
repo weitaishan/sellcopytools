@@ -504,3 +504,52 @@ Landing page headline generator
 Product launch email generator
 Abandoned cart email generator
 ```
+
+## 18. 后续操作记录规范
+
+从下一阶段开始，每次涉及外部网站或控制台操作，都按下面格式记录，避免以后忘记路径：
+
+```text
+操作时间：
+目标：
+打开的网站：
+进入路径：
+填写内容：
+点击按钮：
+验证方式：
+结果：
+遇到的问题：
+解决方式：
+后续动作：
+```
+
+记录原则：
+
+- 只要打开外部网站，就记录 URL 或网站名称。
+- 只要进入控制台，就记录菜单路径。
+- 只要填写域名、邮箱、DNS、TXT、CNAME、API key、统计 ID 等配置，就记录具体字段名和值。
+- 只要出现报错，就记录原始报错文本。
+- 只要最后成功，就记录用什么 URL 或页面状态验证成功。
+- 涉及密码、私钥、API secret 的内容不写入文档，只记录“已配置”。
+
+后续重点网站清单：
+
+```text
+Cloudflare
+GitHub
+Google Search Console
+Google Analytics
+Google AdSense
+Google Keyword Planner / Google Trends
+```
+
+下一阶段将优先记录：
+
+```text
+1. Google Search Console 添加 sellcopytools.com
+2. DNS TXT 验证
+3. 提交 sitemap.xml
+4. 检查索引状态
+5. 添加统计工具
+6. 扩展 SEO 页面并提交到 GitHub / Cloudflare
+```
