@@ -1,17 +1,69 @@
 # SellCopyTools 上线操作记录
 
-本文记录 `sellcopytools.com` 从域名购买到 Cloudflare 部署成功的实际操作路径，方便后续复盘或复制到下一个站点。
+本文记录 `sellcopytools.com` 从商业模式讨论、域名购买、本地建站、Git 仓库准备，到 Cloudflare 部署成功的实际操作路径，方便后续复盘或复制到下一个站点。
 
 ## 1. 项目目标
 
-做一个英文免费工具站：
+最开始讨论过三类“自动写代码赚钱”的模式：
+
+```text
+A. 广告型工具站
+B. 付费型微 SaaS
+C. 内容站 / 联盟营销站
+```
+
+最终选择：
+
+```text
+A. 广告型工具站
+```
+
+选择原因：
+
+- 启动成本低。
+- 可以先做免费工具拿搜索流量。
+- 以后可以接 Google AdSense。
+- 后续可以扩展联盟推广和付费功能。
+- 适合用代码批量扩展页面。
+
+具体方向确定为英文 ecommerce copy tools：
 
 - 域名：`sellcopytools.com`
 - 类型：免费 ecommerce copy generator 工具站
 - 初期变现方向：SEO 流量 + 广告位 + 后续联盟推广
 - 技术形态：静态页面 / Cloudflare Worker 部署
 
-## 2. 本地项目准备
+## 2. 域名选择记录
+
+一开始讨论过是否必须买 `.com`。
+
+结论：
+
+- 不必须买 `.com`。
+- 但英文工具站长期做，`.com` 更适合品牌、信任和广告/联盟审核。
+- 如果只是验证，也可以先用 Cloudflare Pages / Netlify 的免费二级域名。
+
+后来比较了便宜的 `.com` 注册方式：
+
+- Spaceship：首年常有低价，适合低成本起步。
+- Cloudflare Registrar：续费价格透明，但不一定适合新手第一步。
+- Porkbun：价格稳定。
+- Namecheap：可用，但续费可能更高。
+- GoDaddy：不优先推荐，因为续费通常偏贵。
+
+最终购买：
+
+```text
+sellcopytools.com
+```
+
+这个名字的优点：
+
+- 和工具站定位贴合。
+- 包含 `copy` 和 `tools`，容易让用户理解。
+- 适合后续扩展多个营销文案工具。
+
+## 3. 本地项目准备
 
 项目目录：
 
@@ -35,6 +87,20 @@ robots.txt
 sitemap.xml
 ```
 
+第一版网站包含：
+
+- 首页可用的营销文案生成器。
+- 产品描述生成器 SEO 页面。
+- 广告标题生成器 SEO 页面。
+- 邮件文案生成器 SEO 页面。
+- SEO meta description 生成器页面。
+- 广告位占位框。
+- Privacy 和 Terms 页面。
+- `robots.txt`。
+- `sitemap.xml`。
+- 中文上线指南。
+- 部署说明。
+
 已经把站点公开 URL 改成：
 
 ```text
@@ -47,7 +113,32 @@ https://sellcopytools.com
 contact@sellcopytools.com
 ```
 
-## 3. GitHub 连接思路
+## 4. 本地验证记录
+
+本地曾经用 Python 静态服务器预览：
+
+```text
+python3 -m http.server 8080
+```
+
+后续 8080 被占用时，也尝试过 8081。
+
+验证过：
+
+- 首页生成器能正常生成内容。
+- 修改输入后输出会更新。
+- 工具页链接能打开。
+- 浏览器控制台没有明显错误。
+
+项目还打包过一个上传用压缩包：
+
+```text
+sellcopytools-site.zip
+```
+
+后续如果使用 GitHub 自动部署，压缩包不是主要发布方式。
+
+## 5. GitHub 连接思路
 
 后续推荐使用 GitHub 作为代码仓库：
 
@@ -65,7 +156,27 @@ git commit -m "Initial SellCopy Tools site"
 
 注意：本机 `/Users/taishan` 上层已有 Git 仓库，所以 `money-project` 需要作为独立仓库维护。
 
-## 4. Cloudflare 接管域名
+GitHub 仓库建议设置：
+
+```text
+Repository name: sellcopytools
+Public 或 Private 都可以
+不要勾选 README / .gitignore / License
+```
+
+原因：本地项目已经有这些文件，GitHub 新建仓库时保持空仓库更干净。
+
+Cloudflare 连接 GitHub 后，预期流程是：
+
+```text
+本地改代码
+-> git commit
+-> git push
+-> Cloudflare 自动重新部署
+-> 正式网站更新
+```
+
+## 6. Cloudflare 接管域名
 
 在 Cloudflare 添加站点：
 
@@ -126,7 +237,35 @@ Your domain is now protected by Cloudflare
 
 表示 Cloudflare 已经接管域名。
 
-## 6. 部署到 Cloudflare Worker
+## 7. Cloudflare 页面里容易混淆的入口
+
+这次实际遇到过几个容易点错的地方：
+
+```text
+Workers Routes
+```
+
+这个是在某个域名设置里的 Worker 路由，不是用来创建 Pages 项目的。
+
+```text
+Workers & Pages
+```
+
+这个在 Cloudflare 总控制台，不在某个域名的侧边栏里。它用于创建 Worker 或 Pages 项目。
+
+```text
+DNS -> Records
+```
+
+这个只负责域名解析记录。
+
+```text
+腾讯云 DNSPod -> 云解析 DNS
+```
+
+这个只负责腾讯侧的解析记录，不负责把 nameserver 改到 Cloudflare。
+
+## 8. 部署到 Cloudflare Worker
 
 实际部署后生成的临时地址为：
 
@@ -141,7 +280,29 @@ https://money-project.weitaishan-albert.workers.dev/
 - `workers.dev` 能打开，表示项目部署成功。
 - `sellcopytools.com` 能打开，还需要绑定域名和 DNS。
 
-## 7. 绑定 Worker Routes
+## 9. 尝试绑定 Custom Domain 的报错
+
+在 Worker 的 Custom domain 弹窗里尝试添加：
+
+```text
+sellcopytools.com
+```
+
+曾出现报错：
+
+```text
+A DNS record for sellcopytools.com could not be added. Please try again later.
+```
+
+这个意思是 Cloudflare 想自动创建 DNS 记录但失败了。
+
+处理方式：
+
+- 不继续卡在 Custom domain。
+- 改用 Workers Routes 手动绑定。
+- 再补 DNS 记录让请求进入 Cloudflare。
+
+## 10. 绑定 Worker Routes
 
 进入 Cloudflare 的 `sellcopytools.com` 域名设置。
 
@@ -173,7 +334,7 @@ sellcopytools.com/* -> money-project
 
 这一步表示：访问正式域名时，请求会被交给 `money-project` Worker。
 
-## 8. 添加 DNS 记录
+## 11. 添加 DNS 记录
 
 一开始 DNS Records 页面为空，所以即使 Worker Routes 成功，正式域名仍然不能访问。
 
@@ -214,7 +375,7 @@ TTL: Auto
 
 保存后等待几分钟。
 
-## 9. 最终访问成功
+## 12. 最终访问成功
 
 最终可以访问：
 
@@ -230,7 +391,15 @@ https://sellcopytools.com/sitemap.xml
 https://sellcopytools.com/robots.txt
 ```
 
-## 10. 关键经验
+上线成功后，确认的事实：
+
+- Cloudflare 已经接管域名。
+- Worker 临时域名可访问。
+- Workers Routes 已绑定根域名和 `www`。
+- DNS 已补齐 `@` 和 `www`。
+- 正式域名最终可以打开。
+
+## 13. 关键经验
 
 这次踩过的点：
 
@@ -241,8 +410,40 @@ https://sellcopytools.com/robots.txt
 5. 对 Worker Route 来说，可以用 `AAAA @ -> 100::` 作为占位 DNS，让请求进入 Cloudflare。
 6. `www` 可以用 `CNAME www -> sellcopytools.com`。
 7. 两条 DNS 记录都要保持橙色云 Proxied。
+8. 腾讯云里要区分“域名注册管理”和“DNSPod 云解析管理”。
+9. Cloudflare 里要区分“域名设置侧边栏”和“总控制台 Workers & Pages”。
 
-## 11. 后续要做
+## 14. 当前项目状态
+
+当前线上地址：
+
+```text
+https://sellcopytools.com
+https://www.sellcopytools.com
+```
+
+当前 Worker 地址：
+
+```text
+https://money-project.weitaishan-albert.workers.dev/
+```
+
+当前本地项目目录：
+
+```text
+/Users/taishan/Desktop/mine/AI/money-project
+```
+
+当前文档：
+
+```text
+README.md
+LAUNCH_CN.md
+DEPLOY_CN.md
+OPERATION_LOG_CN.md
+```
+
+## 15. 后续要做
 
 上线后下一步：
 
@@ -259,7 +460,7 @@ https://sellcopytools.com/sitemap.xml
 6. 有内容和流量后申请 Google AdSense。
 7. 后续加入 affiliate 推荐和付费功能。
 
-## 12. 快速复用流程
+## 16. 快速复用流程
 
 下次做新站可以按这个顺序：
 
@@ -273,4 +474,33 @@ https://sellcopytools.com/sitemap.xml
 -> DNS 添加 @ 和 www 记录
 -> 正式域名访问测试
 -> 提交 Google Search Console
+```
+
+## 17. 下一阶段计划
+
+下一阶段重点不是继续折腾部署，而是开始做增长和变现准备：
+
+```text
+1. 提交 Google Search Console
+2. 添加统计工具
+3. 扩展更多 SEO 工具页
+4. 优化首页转化和内链
+5. 准备 AdSense 申请条件
+6. 逐步加入 affiliate 推荐位
+```
+
+优先扩展页面方向：
+
+```text
+Shopify product description generator
+Amazon product description generator
+Etsy product description generator
+Facebook ad headline generator
+Google ad description generator
+Instagram caption generator for products
+Product bullet point generator
+Product title generator
+Landing page headline generator
+Product launch email generator
+Abandoned cart email generator
 ```
