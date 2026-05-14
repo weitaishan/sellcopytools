@@ -1018,6 +1018,51 @@ https://sellcopytools.com/legal/affiliate-disclosure.html
 制定接下来 7 天运营节奏。
 ```
 
+## 35. Favicon 和 7 天运营计划记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+补齐浏览器标签页图标，并制定上线后的 7 天运营计划。
+```
+
+执行内容：
+
+```text
+新增 favicon.svg。
+全站 HTML 页面加入 favicon 引用。
+新增 WEEKLY_OPERATING_PLAN_CN.md。
+```
+
+新增文件：
+
+```text
+favicon.svg
+WEEKLY_OPERATING_PLAN_CN.md
+```
+
+运营计划核心：
+
+```text
+每天检查 Google Search Console 和 Google Analytics。
+继续新增高质量页面。
+每周做链接和移动端检查。
+等待收录、曝光和真实访问后再申请 AdSense。
+```
+
+本地验证结果：
+
+```text
+首页 favicon 引用：/favicon.svg
+代表工具页 favicon 引用：/favicon.svg
+首页 H1 正常：Generate product copy that is ready to sell.
+代表工具页 H1 正常：Free Product Launch Email Generator
+favicon.svg 文件存在
+浏览器控制台错误：0
+```
+
 ## 21. 第二批 SEO 页面扩展记录
 
 操作时间：2026-05-14
