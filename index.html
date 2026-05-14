@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SellCopy Tools - Free AI-style marketing copy generators</title>
+    <meta name="description" content="Generate product descriptions, ad headlines, emails, and SEO snippets for ecommerce brands in seconds. Free AI-style marketing copy tools.">
+    <link rel="canonical" href="https://sellcopytools.com/">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "SellCopy Tools",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Free AI-style marketing copy generators for ecommerce product descriptions, ads, emails, and SEO snippets."
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">SellCopy Tools</a>
+      <nav aria-label="Main navigation">
+        <a href="#generator">Generator</a>
+        <a href="tools/product-description-generator.html">Product Tool</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="tool-shell" id="generator">
+        <div class="tool-panel input-panel">
+          <p class="eyebrow">Free ecommerce copy generator</p>
+          <h1>Generate product copy that is ready to sell.</h1>
+          <p class="intro">Create descriptions, ad hooks, email blurbs, and SEO snippets for Shopify, Amazon, Etsy, and direct-to-consumer stores.</p>
+
+          <form id="copyForm" class="generator-form">
+            <label>
+              Product name
+              <input id="productName" name="productName" value="LunaGlow LED Desk Lamp" required>
+            </label>
+
+            <label>
+              Key features
+              <textarea id="features" name="features" rows="5" required>Adjustable brightness, wireless phone charger, warm and cool light modes, minimalist aluminum body</textarea>
+            </label>
+
+            <div class="form-grid">
+              <label>
+                Audience
+                <input id="audience" name="audience" value="remote workers and students">
+              </label>
+              <label>
+                Tone
+                <select id="tone" name="tone">
+                  <option>Premium</option>
+                  <option>Friendly</option>
+                  <option>Bold</option>
+                  <option>Minimal</option>
+                  <option>Luxury</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                Platform
+                <select id="platform" name="platform">
+                  <option>Shopify</option>
+                  <option>Amazon</option>
+                  <option>Etsy</option>
+                  <option>Facebook Ads</option>
+                  <option>Email</option>
+                </select>
+              </label>
+              <label>
+                Main benefit
+                <input id="benefit" name="benefit" value="a calmer, more productive workspace">
+              </label>
+            </div>
+
+            <button type="submit">Generate Copy</button>
+          </form>
+        </div>
+
+        <div class="tool-panel output-panel">
+          <div class="output-header">
+            <div>
+              <p class="eyebrow">Generated output</p>
+              <h2>Your copy</h2>
+            </div>
+            <button class="ghost-button" type="button" id="copyButton">Copy</button>
+          </div>
+          <div id="output" class="output" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <aside class="ad-slot" aria-label="Advertisement">
+        <span>Ad placement</span>
+        <p>Replace this box with Google AdSense after approval.</p>
+      </aside>
+
+      <section class="content-band">
+        <div>
+          <p class="eyebrow">Built for search traffic</p>
+          <h2>Popular free marketing tools</h2>
+        </div>
+        <div class="cards">
+          <a class="card" href="tools/product-description-generator.html">
+            <h3>Product Description Generator</h3>
+            <p>Turn product features into polished ecommerce copy with benefits, bullets, and SEO snippets.</p>
+          </a>
+          <a class="card" href="tools/ad-headline-generator.html">
+            <h3>Ad Headline Generator</h3>
+            <p>Create punchy paid-social hooks for products, launches, discounts, and seasonal campaigns.</p>
+          </a>
+          <a class="card" href="tools/email-copy-generator.html">
+            <h3>Email Copy Generator</h3>
+            <p>Draft launch emails and product blurbs for newsletters without staring at a blank screen.</p>
+          </a>
+          <a class="card" href="tools/seo-meta-description-generator.html">
+            <h3>SEO Meta Description Generator</h3>
+            <p>Generate search snippets for product pages, category pages, and ecommerce landing pages.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="content-band muted" id="faq">
+        <h2>FAQ</h2>
+        <details open>
+          <summary>Is this tool free?</summary>
+          <p>Yes. The generator is free to use and designed for ecommerce founders, marketers, and creators.</p>
+        </details>
+        <details>
+          <summary>Can I use the generated copy commercially?</summary>
+          <p>Yes, but you should review and edit the output so it accurately represents your product and claims.</p>
+        </details>
+        <details>
+          <summary>How does this site make money?</summary>
+          <p>The site can earn revenue from display ads, affiliate links, sponsored placements, and future paid features.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>SellCopy Tools</span>
+      <a href="legal/privacy.html">Privacy</a>
+      <a href="legal/terms.html">Terms</a>
+    </footer>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>
