@@ -863,3 +863,95 @@ Google Search Console 的“已提交的站点地图”列表显示 sitemap.xml 
 对首页、/tools/、几个重要工具页请求编入索引。
 等待 Google 后续抓取和收录。
 ```
+
+## 24. Google Search Console 核心页面检查记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+让 Google 优先检查核心页面，推动首页和重点工具页进入抓取队列。
+```
+
+打开的网站：
+
+```text
+https://search.google.com/search-console
+```
+
+进入路径：
+
+```text
+Google Search Console
+-> sellcopytools.com
+-> 顶部网址检查
+```
+
+检查页面：
+
+```text
+https://sellcopytools.com/
+https://sellcopytools.com/tools/
+https://sellcopytools.com/tools/product-description-generator.html
+https://sellcopytools.com/tools/shopify-product-description-generator.html
+https://sellcopytools.com/tools/facebook-ad-headline-generator.html
+```
+
+执行内容：
+
+```text
+逐个输入 URL 做网址检查。
+如果页面显示不在 Google 上，则点击“请求编入索引”。
+```
+
+后续动作：
+
+```text
+不要反复请求同一批 URL。
+等待 1-7 天后查看“网页”和“效果”数据。
+继续补充 About 和 Contact 页面，提高站点信任度。
+```
+
+## 25. About 和 Contact 页面补充记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+补齐站点基础信任页面，提升用户和广告平台审核时的完整度。
+```
+
+新增页面：
+
+```text
+https://sellcopytools.com/about.html
+https://sellcopytools.com/contact.html
+```
+
+执行内容：
+
+```text
+新增 about.html。
+新增 contact.html。
+首页导航增加 About。
+首页 footer 增加 About 和 Contact。
+sitemap.xml 增加 about.html 和 contact.html。
+```
+
+后续动作：
+
+```text
+部署后打开 about.html 和 contact.html 验证。
+配置 Cloudflare Email Routing，让 contact@sellcopytools.com 能收信。
+```
+
+本地验证结果：
+
+```text
+About 页面标题：About SellCopy Tools
+Contact 页面标题：Contact SellCopy Tools
+Contact 邮箱链接：mailto:contact@sellcopytools.com
+浏览器控制台错误：0
+```
