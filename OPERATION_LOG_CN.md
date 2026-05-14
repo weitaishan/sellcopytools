@@ -651,6 +651,14 @@ Shopify 页面标题：Free Shopify Product Description Generator
 浏览器控制台错误：0
 ```
 
+线上验证结果：
+
+```text
+Google Analytics 首页显示过去 30 分钟活跃用户数：1
+国家/地区：China
+说明 GA4 已经收到 sellcopytools.com 的访问数据。
+```
+
 ## 21. 第二批 SEO 页面扩展记录
 
 操作时间：2026-05-14
