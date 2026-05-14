@@ -10,8 +10,13 @@
 - Cloudflare 已接管域名。
 - Worker 临时地址可以访问。
 - 正式域名可以访问。
-- 首页工具和 4 个 SEO 页面已经上线。
-- Privacy、Terms、robots、sitemap 已准备。
+- 首页工具和 19 个工具入口已经上线。
+- sitemap 当前包含 25 个 URL。
+- Privacy、Terms、About、Contact、robots、sitemap 已准备。
+- `contact@sellcopytools.com` 已配置收信。
+- Google Search Console 已提交 sitemap。
+- Google Analytics 已接通并收到实时访问数据。
+- `/tools/` 已按工具类别分组。
 
 当前线上地址：
 
@@ -24,6 +29,15 @@ https://www.sellcopytools.com
 
 ```text
 https://sellcopytools.com/sitemap.xml
+```
+
+当前页面规模：
+
+```text
+sitemap URL 数量：25
+首页工具卡片数量：19
+/tools/ 工具卡片数量：19
+Search Console 已发现网页：25
 ```
 
 ## 2026-05-14 推进记录
@@ -217,6 +231,74 @@ AdSense 申请前要检查：
 - 是否有隐私政策。
 - 是否能访问 HTML 源码并放广告代码。
 - 是否符合 Google Publisher Policies。
+
+## 2026-05-14 AdSense 申请前检查清单
+
+当前判断：
+
+```text
+暂时不建议马上申请 AdSense。
+基础建设已经完成大半，但新站还需要等待 Google 收录和少量真实访问数据。
+```
+
+已完成：
+
+```text
+域名：完成
+HTTPS：完成
+正式网站可访问：完成
+Search Console：完成
+Sitemap 提交：完成，已发现 25 个网页
+Google Analytics：完成，已收到实时用户
+Privacy 页面：完成
+Terms 页面：完成
+About 页面：完成
+Contact 页面：完成
+联系邮箱：contact@sellcopytools.com 已配置
+工具目录分组：完成
+页面数量：达到第一阶段基础要求
+```
+
+待观察：
+
+```text
+Google 是否开始索引页面
+Search Console 是否出现 impressions
+Analytics 是否有非自己访问的真实用户
+是否有页面加载异常或 404
+是否有工具页停留时间
+```
+
+建议申请 AdSense 的时间点：
+
+```text
+上线后至少 2-4 周
+Search Console 至少收录部分页面
+Analytics 出现一些真实访问
+页面数量保持 25+，最好继续到 30-40
+没有明显错误、死链、空页面
+```
+
+申请前不要做：
+
+```text
+不要刷流量
+不要互点广告
+不要买低质量流量
+不要做垃圾外链
+不要堆 AI 批量低质量文章
+不要把广告伪装成导航或下载按钮
+```
+
+下一步建议：
+
+```text
+1. 每天检查 Search Console 的“网页”和“效果”
+2. 每周新增 3-5 个高质量页面
+3. 做一次死链和线上页面检查
+4. 添加 Affiliate Disclosure 页面，为后续联盟推广做准备
+5. 等收录和访问稳定后申请 AdSense
+```
 
 ## 阶段 5：先加 Affiliate，降低对广告依赖
 

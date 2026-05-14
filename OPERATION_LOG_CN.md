@@ -761,6 +761,89 @@ Brand 分组标题：Brand Messaging Tools
 浏览器控制台错误：0
 ```
 
+## 29. Search Console 发现 25 个网页记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+确认第三批页面部署后，Google Search Console 已读取最新 sitemap。
+```
+
+打开的网站：
+
+```text
+https://search.google.com/search-console
+```
+
+进入路径：
+
+```text
+Google Search Console
+-> sellcopytools.com
+-> 编制索引
+-> 站点地图
+```
+
+结果：
+
+```text
+Search Console 已发现网页：25
+```
+
+后续动作：
+
+```text
+继续优化站点质量。
+不要反复重复提交相同 URL。
+等待 Google 处理收录和效果数据。
+```
+
+## 30. AdSense 申请前检查清单记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+整理 AdSense 申请前的完成项、待观察项和风险行为，避免太早申请或因违规操作影响账号。
+```
+
+新增文档：
+
+```text
+ADSENSE_CHECKLIST_CN.md
+```
+
+当前判断：
+
+```text
+暂时不建议马上申请 AdSense。
+基础建设已经完成大半，但新站还需要等待 Google 收录和少量真实访问数据。
+```
+
+已完成：
+
+```text
+正式域名可访问
+Search Console 已发现 25 个网页
+Google Analytics 已接通
+Privacy / Terms / About / Contact 齐全
+contact@sellcopytools.com 已配置
+工具目录已分组
+sitemap 和 robots 已准备
+```
+
+后续动作：
+
+```text
+添加 Affiliate Disclosure 页面。
+做线上死链检查。
+观察 Search Console 收录和曝光。
+继续新增高质量页面。
+```
+
 ## 21. 第二批 SEO 页面扩展记录
 
 操作时间：2026-05-14
