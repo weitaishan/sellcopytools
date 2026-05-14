@@ -891,6 +891,42 @@ Privacy 页面包含 Google Analytics 说明：是
 浏览器控制台错误：0
 ```
 
+## 32. 站内链接和 footer 一致性检查记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+检查站内链接是否有缺失目标，并统一工具页 footer 的合规链接。
+```
+
+执行内容：
+
+```text
+统一 tools/ 下所有页面 footer。
+footer 链接统一为 About、Contact、Privacy、Terms、Affiliate Disclosure。
+运行本地链接审计脚本。
+使用本地浏览器抽检旧工具页和工具目录锚点。
+```
+
+链接审计结果：
+
+```text
+HTML 文件数量：26
+站内链接数量：299
+缺失链接数量：0
+```
+
+本地浏览器抽检结果：
+
+```text
+旧工具页 footer 链接数量：5
+旧工具页 Affiliate Disclosure 链接数量：1
+工具目录 Brand 锚点标题：Brand Messaging Tools
+浏览器控制台错误：0
+```
+
 ## 21. 第二批 SEO 页面扩展记录
 
 操作时间：2026-05-14
