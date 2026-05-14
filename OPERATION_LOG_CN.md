@@ -974,6 +974,50 @@ HTML 文件数量：26
 手机视口下关键页面加载正常，导航、工具卡片、生成器输出和 footer 链接均可用。
 ```
 
+## 34. 线上关键 URL 访问体检记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+确认正式域名上的关键页面、合规页面、sitemap 和 robots 均可访问。
+```
+
+打开的网站：
+
+```text
+https://sellcopytools.com/
+```
+
+检查 URL：
+
+```text
+https://sellcopytools.com/
+https://sellcopytools.com/tools/
+https://sellcopytools.com/sitemap.xml
+https://sellcopytools.com/robots.txt
+https://sellcopytools.com/about.html
+https://sellcopytools.com/contact.html
+https://sellcopytools.com/legal/privacy.html
+https://sellcopytools.com/legal/terms.html
+https://sellcopytools.com/legal/affiliate-disclosure.html
+```
+
+结果：
+
+```text
+以上 URL 均可打开。
+```
+
+后续动作：
+
+```text
+继续观察 Google Search Console 的“网页”和“效果”数据。
+继续观察 Google Analytics 的访问来源和热门页面。
+制定接下来 7 天运营节奏。
+```
+
 ## 21. 第二批 SEO 页面扩展记录
 
 操作时间：2026-05-14
