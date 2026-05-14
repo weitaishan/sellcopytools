@@ -804,6 +804,13 @@ https://developers.cloudflare.com/email-service/get-started/route-emails/
 https://developers.cloudflare.com/email-routing/get-started/enable-email-routing/
 ```
 
+执行结果：
+
+```text
+contact@sellcopytools.com 已完成配置。
+后续需要用外部邮箱发送测试邮件，确认能转发到常用邮箱。
+```
+
 ## 23. Google Search Console 重新提交 Sitemap 记录
 
 操作时间：2026-05-14
@@ -954,4 +961,85 @@ About 页面标题：About SellCopy Tools
 Contact 页面标题：Contact SellCopy Tools
 Contact 邮箱链接：mailto:contact@sellcopytools.com
 浏览器控制台错误：0
+```
+
+## 26. Google Analytics 接入计划
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+接入 Google Analytics 4，统计 sellcopytools.com 的访问量、来源、热门页面和实时用户。
+```
+
+打开的网站：
+
+```text
+https://analytics.google.com/
+```
+
+进入路径：
+
+```text
+Google Analytics
+-> Admin / 管理
+-> Create account 或 Create property
+-> 创建 GA4 Property
+-> Data streams / 数据流
+-> Web
+```
+
+填写内容：
+
+```text
+Website URL: https://sellcopytools.com
+Stream name: SellCopy Tools
+```
+
+需要获取的值：
+
+```text
+Measurement ID
+格式类似：G-XXXXXXXXXX
+```
+
+下一步：
+
+```text
+把 Measurement ID 发给 Codex。
+Codex 将把 Google tag 代码加入全站页面。
+部署后用 GA4 Realtime / 实时 页面验证是否收到访问数据。
+```
+
+执行结果：
+
+```text
+Measurement ID: G-DVKT1L2TS5
+新增公共脚本：assets/analytics.js
+全站 HTML 页面已加入 Google tag。
+```
+
+本地验证结果：
+
+```text
+首页 Google tag 数量：1
+首页本地 analytics.js 数量：1
+工具页 Google tag 数量：1
+工具页本地 analytics.js 数量：1
+首页生成器输出正常：是
+浏览器控制台错误：0
+```
+
+注意：
+
+```text
+不要把 Google Ads 的 AW- ID 当成 GA4 Measurement ID。
+GA4 Measurement ID 通常以 G- 开头。
+```
+
+参考：
+
+```text
+https://support.google.com/analytics/answer/9306384
 ```
