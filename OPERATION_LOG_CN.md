@@ -659,6 +659,58 @@ Google Analytics 首页显示过去 30 分钟活跃用户数：1
 说明 GA4 已经收到 sellcopytools.com 的访问数据。
 ```
 
+## 27. 第三批 SEO 页面扩展记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+继续扩展电商运营和品牌营销相关页面，把站点内容厚度推进到 25+ URL。
+```
+
+执行内容：
+
+```text
+新增 5 个细分 SEO 工具页。
+更新首页工具卡片。
+更新 /tools/ 工具目录页。
+更新 sitemap.xml。
+更新 MONETIZATION_PLAN_CN.md。
+```
+
+新增页面：
+
+```text
+https://sellcopytools.com/tools/product-launch-email-generator.html
+https://sellcopytools.com/tools/shopify-product-title-generator.html
+https://sellcopytools.com/tools/amazon-bullet-point-generator.html
+https://sellcopytools.com/tools/brand-slogan-generator.html
+https://sellcopytools.com/tools/product-value-proposition-generator.html
+```
+
+验证方式：
+
+```text
+本地检查文件存在。
+检查首页和 /tools/ 页面包含新增入口。
+检查 sitemap.xml 包含新增页面。
+使用本地预览服务器打开代表页面。
+部署后打开正式 URL 验证。
+```
+
+本地验证结果：
+
+```text
+首页工具卡片数量：19
+/tools/ 工具卡片数量：19
+Product Value Proposition 页面标题：Free Product Value Proposition Generator
+Amazon Bullet 页面标题：Free Amazon Bullet Point Generator
+代表页面 Google tag 数量：1
+浏览器控制台错误：0
+sitemap URL 数量：25
+```
+
 ## 21. 第二批 SEO 页面扩展记录
 
 操作时间：2026-05-14
