@@ -26,6 +26,25 @@ https://www.sellcopytools.com
 https://sellcopytools.com/sitemap.xml
 ```
 
+## 2026-05-14 推进记录
+
+Google Search Console 已添加 `sellcopytools.com`，概览页显示正在处理数据。
+
+截图状态：
+
+```text
+正在处理数据，请过 1 天左右再来查看
+```
+
+下一步执行：
+
+```text
+新增第一批 5 个 SEO 工具页
+更新首页工具入口
+新增 /tools/ 工具目录页
+更新 sitemap.xml
+```
+
 ## 赚钱逻辑
 
 这个站的赚钱路径不是“上线马上收钱”，而是：

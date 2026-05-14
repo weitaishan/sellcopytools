@@ -553,3 +553,100 @@ Google Keyword Planner / Google Trends
 5. 添加统计工具
 6. 扩展 SEO 页面并提交到 GitHub / Cloudflare
 ```
+
+## 19. Google Search Console 添加记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+让 Google 发现 sellcopytools.com，并为后续 SEO 收录做准备。
+```
+
+打开的网站：
+
+```text
+https://search.google.com/search-console
+```
+
+进入路径：
+
+```text
+Google Search Console -> 添加资源 -> sellcopytools.com
+```
+
+填写内容：
+
+```text
+资源：sellcopytools.com
+```
+
+验证方式：
+
+```text
+DNS 验证
+```
+
+结果：
+
+```text
+Search Console 已进入 sellcopytools.com 概览页。
+页面显示：正在处理数据，请过 1 天左右再来查看。
+```
+
+后续动作：
+
+```text
+继续扩展 SEO 页面。
+确保 sitemap.xml 包含新页面。
+等待 Search Console 处理数据后检查网页和站点地图状态。
+```
+
+## 20. 第一批 SEO 页面扩展记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+把网站从少量页面扩展到更适合 SEO 和后续 AdSense 审核的内容结构。
+```
+
+执行内容：
+
+```text
+新增 /tools/ 工具目录页。
+新增 5 个细分 SEO 工具页。
+更新首页工具卡片。
+更新 sitemap.xml。
+```
+
+新增页面：
+
+```text
+https://sellcopytools.com/tools/
+https://sellcopytools.com/tools/shopify-product-description-generator.html
+https://sellcopytools.com/tools/amazon-product-description-generator.html
+https://sellcopytools.com/tools/etsy-product-description-generator.html
+https://sellcopytools.com/tools/product-bullet-point-generator.html
+https://sellcopytools.com/tools/product-title-generator.html
+```
+
+验证方式：
+
+```text
+本地检查文件存在。
+检查 sitemap.xml 包含新增页面。
+使用本地预览服务器打开首页、/tools/、Shopify 新页面。
+部署后打开正式 URL 验证。
+```
+
+本地验证结果：
+
+```text
+首页工具卡片数量：9
+/tools/ 页面标题：Free Ecommerce Copywriting Tools
+Shopify 页面标题：Free Shopify Product Description Generator
+浏览器控制台错误：0
+```
