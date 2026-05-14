@@ -844,6 +844,53 @@ sitemap 和 robots 已准备
 继续新增高质量页面。
 ```
 
+## 31. 合规页面补强记录
+
+操作时间：2026-05-14
+
+目标：
+
+```text
+补强 AdSense 和后续 affiliate 推广前的基础合规页面。
+```
+
+新增页面：
+
+```text
+https://sellcopytools.com/legal/affiliate-disclosure.html
+```
+
+执行内容：
+
+```text
+新增 Affiliate Disclosure 页面。
+Privacy 页面更新为正式版本，加入 Google Analytics、广告和 affiliate 说明。
+Terms 页面增加生成内容、第三方服务和联系说明。
+首页 footer 增加 Affiliate Disclosure。
+About / Contact footer 增加 Affiliate Disclosure。
+/tools/ footer 增加 Affiliate Disclosure。
+sitemap.xml 增加 Affiliate Disclosure URL。
+ADSENSE_CHECKLIST_CN.md 更新 Affiliate Disclosure 为已完成。
+```
+
+验证方式：
+
+```text
+本地预览 affiliate disclosure、privacy、terms。
+确认 footer 可访问新增 disclosure 页面。
+确认 sitemap 包含新 URL。
+```
+
+本地验证结果：
+
+```text
+Affiliate Disclosure 页面标题：Affiliate Disclosure
+Affiliate Disclosure 页面 Google tag 数量：1
+Privacy 页面包含 Google Analytics 说明：是
+首页 footer Affiliate Disclosure 链接数量：1
+浏览器控制台错误：0
+```
+
 ## 21. 第二批 SEO 页面扩展记录
 
 操作时间：2026-05-14

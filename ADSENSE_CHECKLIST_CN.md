@@ -56,7 +56,7 @@ Analytics 是否出现真实用户
 ## 申请前建议补强
 
 ```text
-新增 Affiliate Disclosure 页面
+新增 Affiliate Disclosure 页面（已完成）
 新增 5-10 个更高质量页面
 检查所有导航和 footer 链接
 检查移动端布局
@@ -117,8 +117,8 @@ Privacy / Terms / About / Contact 齐全
 ## 当前最优先下一步
 
 ```text
-1. 添加 Affiliate Disclosure 页面
-2. 做线上死链检查
-3. 继续观察 Search Console
-4. 继续新增高质量页面
+1. 做线上死链检查
+2. 继续观察 Search Console
+3. 继续新增高质量页面
+4. 等待收录和真实访问数据
 ```
