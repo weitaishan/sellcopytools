@@ -100,4 +100,8 @@
     <loc>https://sellcopytools.com/legal/terms.html</loc>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://sellcopytools.com/legal/affiliate-disclosure.html</loc>
+    <priority>0.3</priority>
+  </url>
 </urlset>
