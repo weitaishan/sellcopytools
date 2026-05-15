@@ -1,6 +1,6 @@
 # SellCopyTools 赚钱执行计划
 
-更新时间：2026-05-14
+更新时间：2026-05-15
 
 ## 当前状态
 
@@ -10,8 +10,8 @@
 - Cloudflare 已接管域名。
 - Worker 临时地址可以访问。
 - 正式域名可以访问。
-- 首页工具和 19 个工具入口已经上线。
-- sitemap 当前包含 25 个 URL。
+- 首页工具和 24 个工具入口已经上线。
+- sitemap 当前包含 34 个 URL。
 - Privacy、Terms、About、Contact、robots、sitemap 已准备。
 - `contact@sellcopytools.com` 已配置收信。
 - Google Search Console 已提交 sitemap。
@@ -34,10 +34,62 @@ https://sellcopytools.com/sitemap.xml
 当前页面规模：
 
 ```text
-sitemap URL 数量：25
-首页工具卡片数量：19
-/tools/ 工具卡片数量：19
-Search Console 已发现网页：25
+sitemap URL 数量：34
+首页工具卡片数量：24
+/tools/ 工具和指南入口数量：26
+Search Console 已发现网页：29，下一次提交 sitemap 后预期变成 34
+```
+
+## 当前赚钱路线
+
+这条路线不要靠运气，要按阶段推进：
+
+```text
+0-30 天：做收录和关键词验证
+30-60 天：根据 Search Console 查询词补页面
+60-90 天：申请 AdSense，开始小流量变现
+90-180 天：加入联盟链接和更强工具功能
+```
+
+第 1 阶段目标：
+
+```text
+页面数：30-40
+Search Console：开始出现 impressions
+Analytics：出现少量非自己访问
+内容结构：工具页 + 指南页 + 示例页
+```
+
+第 2 阶段目标：
+
+```text
+找出有展示但排名靠后的关键词。
+为这些关键词补内容、补内部链接、优化标题。
+每周新增 3-5 个页面，不做低质量批量页。
+```
+
+第 3 阶段目标：
+
+```text
+达到基础收录和真实访问后申请 AdSense。
+申请前保持 Privacy、Terms、About、Contact、Affiliate Disclosure 完整。
+不要刷流量，不要诱导点击广告。
+```
+
+第 4 阶段目标：
+
+```text
+在相关页面加入自然的联盟推荐。
+优先考虑 Shopify apps、email marketing tools、SEO tools、copywriting tools。
+只放和页面主题相关的链接。
+```
+
+判断方向是否继续：
+
+```text
+30 天看 impressions 是否出现。
+60 天看哪些页面有机会。
+90 天决定继续加码、调整关键词，或切换细分方向。
 ```
 
 ## 2026-05-14 推进记录
@@ -90,6 +142,26 @@ Analytics 验证完成后，继续新增第三批 SEO 页面，把站点推向 2
 新增 Product Value Proposition Generator
 更新首页工具入口
 更新 /tools/ 工具目录页
+更新 sitemap.xml
+```
+
+## 2026-05-15 长尾页面推进记录
+
+继续围绕 ecommerce copy 和平台长尾词补强页面。
+
+执行内容：
+
+```text
+新增 Shopify Meta Description Generator
+新增 Amazon Product Title Generator
+新增 Etsy Title Generator
+新增 Ecommerce SEO Title Generator
+新增 Product Feature Generator
+新增 Product Benefits Generator
+新增 Product Description Examples
+新增 How to Write Product Descriptions for Shopify
+更新首页入口
+更新 /tools/ 工具目录和 Guides 区域
 更新 sitemap.xml
 ```
 

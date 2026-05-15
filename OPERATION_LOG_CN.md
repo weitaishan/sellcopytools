@@ -1584,3 +1584,70 @@ Google Search Console 操作：
 新页面上线后先等 sitemap 被重新读取。
 如果要手动检查，只检查 1-2 个核心新页面即可。
 ```
+
+## 29. 第二批长尾页面和内容页补强
+
+操作时间：2026-05-15
+
+目标：
+
+```text
+继续推进第 2 批页面。
+不只新增工具页，也新增指南和示例页，让网站更像真实内容站，而不是薄工具页集合。
+```
+
+新增工具页：
+
+```text
+https://sellcopytools.com/tools/ecommerce-seo-title-generator.html
+https://sellcopytools.com/tools/product-feature-generator.html
+https://sellcopytools.com/tools/product-benefits-generator.html
+```
+
+新增内容页：
+
+```text
+https://sellcopytools.com/guides/product-description-examples.html
+https://sellcopytools.com/guides/how-to-write-product-descriptions-for-shopify.html
+```
+
+执行内容：
+
+```text
+更新首页工具入口。
+新增首页 Guides and examples 区块。
+更新 /tools/ 工具目录。
+在 /tools/ 增加 Guides 分类。
+更新 sitemap.xml。
+更新赚钱执行计划。
+```
+
+部署后需要打开的网站：
+
+```text
+https://sellcopytools.com/tools/ecommerce-seo-title-generator.html
+https://sellcopytools.com/tools/product-feature-generator.html
+https://sellcopytools.com/tools/product-benefits-generator.html
+https://sellcopytools.com/guides/product-description-examples.html
+https://sellcopytools.com/guides/how-to-write-product-descriptions-for-shopify.html
+https://sellcopytools.com/sitemap.xml
+```
+
+Google Search Console 操作：
+
+```text
+打开 https://search.google.com/search-console
+进入 sellcopytools.com
+点击左侧“站点地图”
+重新提交 https://sellcopytools.com/sitemap.xml
+等待 Google 重新读取。
+```
+
+当前赚钱路线：
+
+```text
+0-30 天：做收录和关键词验证。
+30-60 天：根据 Search Console 查询词优化页面。
+60-90 天：满足条件后申请 AdSense。
+90-180 天：加入联盟链接和更强工具功能。
+```
