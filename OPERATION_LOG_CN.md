@@ -1455,3 +1455,77 @@ GA4 Measurement ID 通常以 G- 开头。
 ```text
 https://support.google.com/analytics/answer/9306384
 ```
+
+## 27. 第一天数据确认和关键词研究计划
+
+操作时间：2026-05-15
+
+目标：
+
+```text
+确认上线第一天应该做什么。
+判断当前 ecommerce copy tools 方向是否可继续。
+建立第一版关键词池，避免后续盲目加页面。
+```
+
+当前观察：
+
+```text
+Google Analytics 已经能看到实时访问。
+访问国家/地区里出现 China 和 United States。
+Search Console 概览页显示“正在处理数据，请过 1 天左右再来看”。
+Search Console 站点地图此前已发现 26 个 URL。
+```
+
+判断：
+
+```text
+这是新站第一天的正常状态。
+第一天不用反复刷新后台，也不用急着申请 AdSense。
+当前最应该做的是准备关键词池和下一批页面计划。
+```
+
+打开的网站：
+
+```text
+https://analytics.google.com/
+https://search.google.com/search-console
+https://www.google.com
+https://trends.google.com/
+https://ads.google.com/
+```
+
+关键词研究方法：
+
+```text
+先用 Google 搜索手动查看竞争页面。
+再用 Google Trends 看趋势。
+后续用 Google Ads Keyword Planner 看大致搜索量、竞争和出价。
+最后结合 Search Console 真实查询词调整页面方向。
+```
+
+初步关键词结论：
+
+```text
+不要主攻 product description generator 这类泛词。
+优先做“平台 + 具体文案类型”的长尾词。
+例如 Shopify、Amazon、Etsy、abandoned cart email、ad headline、meta description。
+```
+
+新增文档：
+
+```text
+KEYWORD_RESEARCH_CN.md
+```
+
+下一步：
+
+```text
+先新增 3 个 P2 页面：
+1. Shopify Meta Description Generator
+2. Amazon Product Title Generator
+3. Etsy Title Generator
+
+然后更新 /tools/、首页工具列表、sitemap.xml 和内部链接。
+部署后重新提交 sitemap。
+```

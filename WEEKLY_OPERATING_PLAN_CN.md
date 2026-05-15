@@ -49,6 +49,8 @@ Google Analytics 重点看：
 确认 sitemap 发现 26 个 URL
 记录 Search Console 当前状态
 记录 Analytics 当前状态
+建立第一版关键词池
+确认下一批页面优先级
 ```
 
 不要做：
@@ -57,6 +59,14 @@ Google Analytics 重点看：
 不要申请 AdSense
 不要刷访问
 不要找朋友帮忙反复点击
+```
+
+补充说明：
+
+```text
+第一天不是赚钱日，而是打地基日。
+Search Console 显示“正在处理数据，请过 1 天左右再来看”是正常状态。
+Analytics 里看到的访问可能主要来自自己测试，不要把它当成真实 SEO 流量。
 ```
 
 ## 第 2 天
@@ -68,6 +78,7 @@ Google Analytics 重点看：
 看是否有页面状态变化
 检查 Analytics 是否有非自己访问
 整理下一批 5 个页面关键词
+开始新增 1-2 个优先级最高的长尾页面
 ```
 
 建议下一批页面：
