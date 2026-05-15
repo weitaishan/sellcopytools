@@ -1529,3 +1529,58 @@ KEYWORD_RESEARCH_CN.md
 然后更新 /tools/、首页工具列表、sitemap.xml 和内部链接。
 部署后重新提交 sitemap。
 ```
+
+## 28. 第一批长尾关键词页面补充
+
+操作时间：2026-05-15
+
+目标：
+
+```text
+把关键词计划落到实际页面。
+先补 3 个更具体的长尾工具页，提高新站获得搜索展示的机会。
+```
+
+新增页面：
+
+```text
+https://sellcopytools.com/tools/shopify-meta-description-generator.html
+https://sellcopytools.com/tools/amazon-product-title-generator.html
+https://sellcopytools.com/tools/etsy-title-generator.html
+```
+
+执行内容：
+
+```text
+新增 3 个 HTML 工具页。
+更新首页 Popular free marketing tools 工具列表。
+更新 /tools/ 工具目录。
+更新 sitemap.xml。
+```
+
+后续部署后需要打开的网站：
+
+```text
+https://sellcopytools.com/tools/shopify-meta-description-generator.html
+https://sellcopytools.com/tools/amazon-product-title-generator.html
+https://sellcopytools.com/tools/etsy-title-generator.html
+https://sellcopytools.com/sitemap.xml
+```
+
+Google Search Console 操作：
+
+```text
+打开 https://search.google.com/search-console
+进入 sellcopytools.com
+点击左侧“站点地图”
+确认 sitemap.xml 仍为成功状态
+如需要，重新提交 https://sellcopytools.com/sitemap.xml
+```
+
+注意：
+
+```text
+不要重复请求太多 URL 编入索引。
+新页面上线后先等 sitemap 被重新读取。
+如果要手动检查，只检查 1-2 个核心新页面即可。
+```
