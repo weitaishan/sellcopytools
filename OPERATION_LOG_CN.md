@@ -1651,3 +1651,98 @@ Google Search Console 操作：
 60-90 天：满足条件后申请 AdSense。
 90-180 天：加入联盟链接和更强工具功能。
 ```
+
+## 30. 第 2 天运营检查清单
+
+操作日期：2026-05-16
+
+目标：
+
+```text
+确认 Google 是否开始处理页面。
+确认 sitemap 是否仍然成功。
+确认 Analytics 是否有访问记录。
+开始准备 Bing Webmaster Tools 和关键词表。
+不要盲目刷数据或重复提交。
+```
+
+今天要打开的网站：
+
+```text
+https://search.google.com/search-console
+https://analytics.google.com/
+https://www.bing.com/webmasters/
+https://sellcopytools.com/sitemap.xml
+```
+
+Google Search Console 检查路径：
+
+```text
+左侧 -> 站点地图
+确认 sitemap.xml 状态仍然是“成功”
+确认“已发现的网页”是否仍为 34 或后续增加
+```
+
+```text
+左侧 -> 效果
+查看“总展示次数”
+如果仍然没有数据，这是第 2 天正常情况
+```
+
+```text
+左侧 -> 网页
+查看“已编入索引”和“未编入索引”
+如果还没有明显变化，也是正常情况
+```
+
+Google Analytics 检查路径：
+
+```text
+首页
+实时
+报告 -> 互动 -> 页面和屏幕
+```
+
+重点记录：
+
+```text
+昨天到今天有没有访问
+访问页面主要是哪些
+有没有 United States 等目标地区访问
+```
+
+Bing Webmaster Tools 操作：
+
+```text
+打开 https://www.bing.com/webmasters/
+用 Google 账号登录
+选择从 Google Search Console 导入 sellcopytools.com
+提交 sitemap：https://sellcopytools.com/sitemap.xml
+```
+
+今天不要做：
+
+```text
+不要重复提交 Google sitemap 多次
+不要反复请求同一批 URL 编入索引
+不要申请 AdSense
+不要刷访问
+不要注册大量 Affiliate 平台
+```
+
+今天可以做：
+
+```text
+完成 Bing Webmaster Tools
+整理 20-30 个候选关键词
+记录 Search Console 和 Analytics 当前状态
+如果还有精力，只优化现有页面，不再批量加很多新页面
+```
+
+判断标准：
+
+```text
+如果有展示次数：记录出现展示的查询词和页面。
+如果没有展示次数：继续等待，不代表失败。
+如果 sitemap 成功且已发现 34 个网页：当前基础状态正常。
+```
