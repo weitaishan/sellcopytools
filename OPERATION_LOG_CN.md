@@ -1746,3 +1746,59 @@ Bing Webmaster Tools 操作：
 如果没有展示次数：继续等待，不代表失败。
 如果 sitemap 成功且已发现 34 个网页：当前基础状态正常。
 ```
+
+## 31. 竞品观察和首页生成器优化
+
+操作日期：2026-05-16
+
+目标：
+
+```text
+查看真实搜索结果里的优秀竞品。
+判断 SellCopyTools 还能优化的地方。
+先做一个不增加成本的产品体验优化。
+```
+
+观察到的竞品方向：
+
+```text
+ProductCopyAI：一次生成 title、description、bullets、meta、keywords、image alt text。
+AdNabu：强调 free、no signup、marketplace-ready。
+Yodel：专注 Shopify 商家，强调节省时间和商家评价。
+Etsy 工具类站点：强调 title、description、13 tags、handmade/vintage/digital downloads。
+```
+
+执行优化：
+
+```text
+首页生成器从通用输出升级为平台专用输出。
+```
+
+不同平台输出：
+
+```text
+Shopify：description、bullets、SEO title、meta description、collection blurb、CTA。
+Amazon：title、bullets、description、backend search terms、A+ headline。
+Etsy：title、description、13 tags、occasion angles、shop update。
+Facebook Ads：headlines、primary text、benefit bullets、CTA、retargeting angle。
+Email：subject lines、preview text、email blurb、feature callouts、CTA。
+```
+
+新增统计事件：
+
+```text
+generate_copy
+copy_generated_output
+```
+
+作用：
+
+```text
+后续在 Google Analytics 中判断用户是否真正使用工具。
+```
+
+新增文档：
+
+```text
+COMPETITOR_KEYWORD_AUDIT_CN.md
+```
