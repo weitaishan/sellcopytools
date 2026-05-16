@@ -1802,3 +1802,32 @@ copy_generated_output
 ```text
 COMPETITOR_KEYWORD_AUDIT_CN.md
 ```
+
+## 32. 重点页面示例内容补强
+
+操作日期：2026-05-16
+
+目标：
+
+```text
+继续根据竞品观察优化页面质量。
+补强重点页面的实际示例和用户可参考内容。
+```
+
+执行内容：
+
+```text
+首页增加 Free to use / No signup / Platform-ready outputs 卖点。
+首页输出区增加平台专用说明。
+Etsy Title Generator 增加标题示例和 13 tags 示例。
+Amazon Product Title Generator 增加标题结构和避坑说明。
+Shopify Meta Description Generator 增加 product / collection / campaign snippet 示例。
+```
+
+优化原因：
+
+```text
+竞品普遍强调平台适配和具体输出字段。
+单纯工具页说明不够，需要更多具体例子支撑页面质量。
+这些内容也有助于后续 AdSense 审核和搜索引擎理解页面主题。
+```

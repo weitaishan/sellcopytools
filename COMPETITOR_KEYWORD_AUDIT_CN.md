@@ -134,6 +134,27 @@ copy_generated_output 事件
 这比只看 pageview 更接近产品价值。
 ```
 
+## 第二轮产品优化
+
+已执行：
+
+```text
+首页增加 Free to use / No signup / Platform-ready outputs 卖点。
+首页输出区增加平台专用说明。
+Etsy Title Generator 增加标题示例和 13 tags 示例。
+Amazon Product Title Generator 增加标题结构和避坑说明。
+Shopify Meta Description Generator 增加 product / collection / campaign snippet 示例。
+```
+
+目的：
+
+```text
+让页面更接近真实卖家需求。
+让用户进入页面后能看到可参考的例子。
+让 Google 更容易理解每个页面的独立主题。
+提升 AdSense 审核前的内容厚度。
+```
+
 ## 下一步优化优先级
 
 P0：

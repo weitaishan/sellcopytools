@@ -130,6 +130,23 @@ h3 {
   max-width: 660px;
 }
 
+.feature-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 0;
+}
+
+.feature-strip span {
+  border: 1px solid #c7d9d2;
+  background: #edf6f2;
+  color: var(--accent-dark);
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 800;
+  padding: 7px 10px;
+}
+
 .generator-form {
   display: grid;
   gap: 16px;
@@ -205,6 +222,13 @@ button:hover {
   color: #233129;
 }
 
+.output-note {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  max-width: 520px;
+}
+
 .result-block {
   border-left: 4px solid var(--accent);
   background: #f7faf7;
@@ -228,6 +252,42 @@ button:hover {
   text-transform: uppercase;
   font-weight: 800;
   margin-bottom: 8px;
+}
+
+.example-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.example-card {
+  border: 1px solid var(--line);
+  background: #f7faf7;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.example-card strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 12px 0 0;
+  list-style: none;
+}
+
+.tag-list li {
+  border: 1px solid #cfd8d1;
+  background: #ffffff;
+  border-radius: 999px;
+  color: #304039;
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 6px 9px;
 }
 
 .ad-slot {
