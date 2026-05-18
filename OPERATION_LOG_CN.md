@@ -2009,3 +2009,41 @@ Bing Webmaster 当前观察：
 Search Performance 仍显示 Please check back in 48 hours while we prepare the data for your site。
 这是新接入后的正常等待状态。
 ```
+
+## 35. 第 3 天核心页面补强任务
+
+操作日期：2026-05-18
+
+目标：
+
+```text
+按计划补强 5 个核心页面中的前 2 个。
+今天优先补 Product Description Generator 和 Etsy Title Generator。
+```
+
+补强页面：
+
+```text
+https://sellcopytools.com/tools/product-description-generator.html
+https://sellcopytools.com/tools/etsy-title-generator.html
+```
+
+执行内容：
+
+```text
+Product Description Generator 增加 Shopify / Amazon / Etsy 三类产品描述示例。
+Product Description Generator 增加常见错误提醒。
+Product Description Generator 增加相关工具内部链接。
+Etsy Title Generator 增加 Etsy title formula。
+Etsy Title Generator 增加 before / after 标题示例。
+Etsy Title Generator 增加相关 Etsy 和 marketplace 工具内部链接。
+```
+
+优化目的：
+
+```text
+提高页面独立价值。
+降低“模板页/薄内容页”的风险。
+帮助 Google 更清楚理解页面主题。
+给用户提供可直接参考的例子。
+```
