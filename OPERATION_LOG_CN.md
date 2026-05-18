@@ -1932,3 +1932,80 @@ https://www.bing.com/webmasters/
 如果 Search Console 还没有展示次数或索引数据，也属于第 3 天正常情况。
 下一步等 Search Console 出现 impressions 后，再根据查询词优化页面。
 ```
+
+## 34. 第 3 天实际数据记录和首页关键词微调
+
+操作日期：2026-05-18
+
+Google Analytics 当前观察：
+
+```text
+按国家/地区划分的活跃用户：
+United States：13
+China：12
+United Kingdom：4
+Germany：3
+Hong Kong：2
+South Korea：2
+Austria：1
+```
+
+```text
+页面浏览：
+首页：48
+工具目录页：12
+About 页面：4
+Facebook Ad Headline 页面：3
+Amazon Product 页面：2
+Etsy Title 页面：2
+Shopify Meta Description 页面：2
+```
+
+Google Search Console 当前观察：
+
+```text
+已编入索引：2
+未编入索引：34
+总点击次数：0
+总曝光次数：4
+平均点击率：0%
+平均排名：80.3
+```
+
+已出现查询词：
+
+```text
+sales copy ai
+sales copy generator
+```
+
+判断：
+
+```text
+第 3 天已经有 impressions，这是好信号。
+排名 80.3 很低是正常状态，新站刚开始被 Google 测试。
+当前不用追求点击，先继续观察哪些查询词出现。
+```
+
+执行优化：
+
+```text
+首页 title 从泛 marketing copy generator 调整为 Free Sales Copy Generator for Ecommerce。
+首页 meta description 加入 ecommerce sales copy、product descriptions、ad headlines、emails、SEO titles。
+首页 H1 和 intro 加入 ecommerce sales copy / sales copy。
+```
+
+优化原因：
+
+```text
+Search Console 已经出现 sales copy ai 和 sales copy generator 查询词。
+首页需要更明确承接 sales copy generator 搜索意图。
+这属于小幅关键词匹配优化，不改变网站方向。
+```
+
+Bing Webmaster 当前观察：
+
+```text
+Search Performance 仍显示 Please check back in 48 hours while we prepare the data for your site。
+这是新接入后的正常等待状态。
+```
