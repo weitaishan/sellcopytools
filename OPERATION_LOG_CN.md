@@ -1831,3 +1831,104 @@ Shopify Meta Description Generator 增加 product / collection / campaign snippe
 单纯工具页说明不够，需要更多具体例子支撑页面质量。
 这些内容也有助于后续 AdSense 审核和搜索引擎理解页面主题。
 ```
+
+## 33. 第 3 天运营检查清单
+
+操作日期：2026-05-18
+
+背景：
+
+```text
+第 2 天已经完成 Google Search Console、Google Analytics、Bing Webmaster Tools 检查。
+第 2 天还完成了竞品观察、首页生成器升级、重点页面示例补强，并已 push 到 GitHub。
+第 3 天不需要大批量加页面，重点是检查数据、确认部署、轻量优化。
+```
+
+今天要打开的网站：
+
+```text
+https://sellcopytools.com/
+https://sellcopytools.com/sitemap.xml
+https://search.google.com/search-console
+https://analytics.google.com/
+https://www.bing.com/webmasters/
+```
+
+第 1 步：检查线上页面
+
+```text
+打开首页，确认生成器能正常使用。
+选择 Shopify / Amazon / Etsy 三个平台各点一次 Generate Copy。
+确认输出内容是平台专用字段，而不是通用文案。
+打开 sitemap.xml，确认仍然能访问。
+```
+
+第 2 步：检查 Google Search Console
+
+```text
+左侧 -> 站点地图
+确认 sitemap.xml 状态仍然是“成功”。
+确认已发现网页是否仍为 34。
+```
+
+```text
+左侧 -> 网页
+查看有没有“已编入索引”的页面。
+如果仍显示正在处理数据，继续等待，这是新站正常状态。
+```
+
+```text
+左侧 -> 效果
+查看“总展示次数”。
+如果有展示次数，记录查询词和页面。
+如果没有展示次数，继续等待，不代表失败。
+```
+
+第 3 步：检查 Google Analytics
+
+```text
+报告 -> 互动 -> 页面和屏幕
+看最近访问最多的页面。
+```
+
+```text
+报告 -> 互动 -> 事件
+后续重点关注 generate_copy 和 copy_generated_output。
+如果事件暂时看不到，等待 Analytics 处理。
+```
+
+第 4 步：检查 Bing Webmaster Tools
+
+```text
+打开 https://www.bing.com/webmasters/
+查看 Sitemaps 是否读取成功。
+查看 Search Performance 是否仍在准备数据。
+如果显示需要等待 48 小时，这是正常状态。
+```
+
+今天可以做的轻量优化：
+
+```text
+挑 1-2 个重点页面人工读一遍。
+检查页面文案是否自然。
+检查页面有没有具体示例。
+检查按钮和内部链接是否能打开。
+```
+
+今天不要做：
+
+```text
+不要申请 AdSense。
+不要注册大量 Affiliate。
+不要刷访问。
+不要重复提交 Google sitemap 很多次。
+不要继续一次性新增十几个页面。
+```
+
+判断标准：
+
+```text
+如果 sitemap 成功、网站可访问、Analytics 有访问、Bing 已接入，就是正常推进。
+如果 Search Console 还没有展示次数或索引数据，也属于第 3 天正常情况。
+下一步等 Search Console 出现 impressions 后，再根据查询词优化页面。
+```
