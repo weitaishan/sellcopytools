@@ -1,6 +1,6 @@
 # SellCopyTools 每日运营日志
 
-这个文档用于记录每天做了什么、数据是多少、判断是什么、明天要做什么。
+这个文档用于记录每天做了什么、数据是多少、具体操作过程是什么、判断是什么、明天要做什么。
 
 固定原则：
 
@@ -9,7 +9,20 @@
 每天先看数据，再决定动作。
 有重要操作就记录。
 有代码或文档变更就提交。
+每次操作都要写清楚打开了什么网站、看了什么数据、改了什么文件、结果是什么。
 不刷访问，不重复大量提交 sitemap，不太早申请 AdSense。
+```
+
+固定记录格式：
+
+```text
+昨天/之前进度
+今日数据
+今日判断
+今日操作记录
+今日执行结果
+明日计划
+不做事项
 ```
 
 ## Day 1 - 2026-05-15
@@ -261,6 +274,21 @@ Amazon Product Title Generator 增加相关 Amazon listing tools 内部链接。
 Shopify Meta Description Generator 增加常见错误和相关 Shopify 工具内部链接。
 内部链接检查：412 个，缺失 0 个。
 push 到 GitHub。
+```
+
+### 今日操作记录
+
+```text
+用户打开 Google Search Console -> 效果，反馈总曝光次数仍为 4，总点击为 0，平均排名 80.3。
+用户打开 Google Search Console -> 网页，反馈已编入索引 2，未编入索引 34。
+用户打开 Google Analytics，反馈首页、工具目录、Etsy、Amazon、Facebook 页面均有访问。
+用户打开 Bing Webmaster Tools -> Search Performance，反馈 clicks 0 / impressions 0。
+Codex 判断第 4 天数据无明显变化属于正常状态，不建议大批量新增页面或申请 AdSense。
+Codex 修改首页 FAQ，补充 sales copy generator 能创建什么、支持哪些平台、生成内容是否可直接发布。
+Codex 修改 Amazon Product Title Generator，增加相关 Amazon listing tools 内部链接。
+Codex 修改 Shopify Meta Description Generator，增加常见错误和相关 Shopify 工具内部链接。
+Codex 运行内部链接检查，结果 412 个内部链接，缺失 0。
+Codex git commit 并 push 到 GitHub main，触发 Cloudflare 自动部署。
 ```
 
 ### 明日计划

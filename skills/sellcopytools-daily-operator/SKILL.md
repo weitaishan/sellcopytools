@@ -9,15 +9,29 @@ Use this skill whenever the user asks what to do today, reports daily data, asks
 
 ## Core Rule
 
-Every operating day must produce three things:
+Every operating day must produce four things:
 
 ```text
 1. Yesterday / previous progress summary
-2. Today's data and actions
-3. Tomorrow's plan
+2. Today's data
+3. Today's operation record
+4. Tomorrow's plan
 ```
 
 Always update project documentation when meaningful data or actions happen.
+
+Do not record only metrics. Record the full operating story:
+
+```text
+What the user did
+What Codex did
+Which websites were opened
+Which menu paths were used
+Which files/pages were changed
+What was verified
+What the result means
+What the next step is
+```
 
 ## Files To Maintain
 
@@ -89,6 +103,29 @@ Bing clicks / impressions
 
 If a number is not visible, write `未提供` instead of guessing.
 
+### 2.5 Record Operations, Not Just Data
+
+For every meaningful action, write an operation record with:
+
+```text
+时间/日期
+操作者：用户 / Codex / 双方
+打开的网站或本地文件
+操作路径
+填写或修改的内容
+结果
+后续动作
+```
+
+Examples:
+
+```text
+用户在 Google Search Console 查看“效果”，发现总曝光次数为 4。
+Codex 根据 sales copy generator 查询词优化首页 title / meta / H1。
+Codex 提交并 push 到 GitHub，触发 Cloudflare 自动部署。
+用户在 Bing Webmaster 查看 Search Performance，仍为 0 impressions。
+```
+
 ### 3. Decide Today's Action
 
 Use this priority order:
@@ -125,14 +162,16 @@ Append to `DAILY_OPERATING_LOG_CN.md` with this structure:
 
 ### 今日判断
 
-### 今日执行
+### 今日操作记录
+
+### 今日执行结果
 
 ### 明日计划
 
 ### 不做事项
 ```
 
-Also append important operational milestones to `OPERATION_LOG_CN.md`.
+Also append important operational milestones to `OPERATION_LOG_CN.md`. If the action affects the money path, indexing, analytics, deployment, email, AdSense, affiliate, or content strategy, it must be recorded.
 
 ### 5. If Code Or Docs Changed
 
@@ -198,5 +237,7 @@ Tell the user what it means.
 Tell the user exactly what to do today.
 Tell the user what not to do.
 Record the data.
+Record the operations.
 Keep the money path realistic.
+Do not promise guaranteed earnings, but keep pushing toward revenue with disciplined execution.
 ```
