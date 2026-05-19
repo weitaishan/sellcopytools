@@ -2110,3 +2110,56 @@ Shopify Meta Description Generator 增加常见错误和相关 Shopify 工具内
 第 4 天无需大幅加页面。
 当前要继续提高核心页质量，同时观察 Search Console 是否出现更多 impressions 和查询词。
 ```
+
+## 37. 每日运营 Skill 和独立日志建立
+
+操作日期：2026-05-19
+
+目标：
+
+```text
+把每天运营 SellCopyTools 的流程固化成 skill。
+把之前做了什么、今天做了什么、明天做什么集中记录。
+以后每天按同一个格式维护数据。
+```
+
+新增 skill：
+
+```text
+skills/sellcopytools-daily-operator/SKILL.md
+```
+
+skill 用途：
+
+```text
+记录昨天/之前进度。
+记录当天 Google Search Console、Google Analytics、Bing Webmaster、索引、展示、查询词、页面浏览、事件数据。
+根据数据决定当天动作。
+写明天计划。
+记录不应该做的事情。
+如果有代码或文档变更，则检查、提交、push。
+```
+
+新增每日日志：
+
+```text
+DAILY_OPERATING_LOG_CN.md
+```
+
+已补录：
+
+```text
+Day 1 - 2026-05-15
+Day 2 - 2026-05-16
+Day 3 - 2026-05-18
+Day 4 - 2026-05-19
+```
+
+后续规则：
+
+```text
+每天先读 DAILY_OPERATING_LOG_CN.md。
+每天新增当天记录。
+每天写明天计划。
+重要操作继续同步写入 OPERATION_LOG_CN.md。
+```
