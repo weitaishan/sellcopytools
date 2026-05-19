@@ -25,6 +25,69 @@
 不做事项
 ```
 
+## 怎么查看
+
+每天只看这个文档即可：
+
+```text
+DAILY_OPERATING_LOG_CN.md
+```
+
+查看方法：
+
+```text
+1. 找到最新的 Day。
+2. 看“今日执行结果”了解今天做完了什么。
+3. 看“明日计划”了解明天该做什么。
+4. 看“不做事项”避免乱操作。
+```
+
+## 最新状态
+
+当前最新记录：
+
+```text
+Day 4 - 2026-05-19
+```
+
+今天总结位置：
+
+```text
+Day 4 - 2026-05-19 -> 今日执行结果
+```
+
+明天计划位置：
+
+```text
+Day 4 - 2026-05-19 -> 明日计划
+```
+
+明天是：
+
+```text
+Day 5 - 2026-05-20
+```
+
+Day 5 开始时要做：
+
+```text
+检查 Search Console -> 效果：总曝光、查询词、排名页面。
+检查 Search Console -> 网页：已编入索引、未编入索引。
+检查 Analytics -> 事件：generate_copy、copy_generated_output。
+检查 Analytics -> 页面和屏幕：首页、Etsy、Amazon、Shopify 页面访问。
+检查 Bing Webmaster -> Sitemaps / Search Performance。
+```
+
+## 按天索引
+
+```text
+Day 1 - 2026-05-15：建站基础、sitemap、关键词计划、页面扩展到 34。
+Day 2 - 2026-05-16：Bing 接入、竞品观察、生成器升级、重点页面示例补强。
+Day 3 - 2026-05-18：出现 4 次 Google 展示，首页按 sales copy 查询词微调，补强 Product / Etsy 页面。
+Day 4 - 2026-05-19：记录数据，补强首页 FAQ、Amazon、Shopify 页面，建立每日运营 skill 和完整记录规则。
+Day 5 - 2026-05-20：待执行，先看数据，再决定是否优化。
+```
+
 ## Day 1 - 2026-05-15
 
 ### 昨天/之前进度
