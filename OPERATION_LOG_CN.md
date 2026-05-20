@@ -2382,3 +2382,80 @@ sitemap URL 数量：34
 不要继续请求 .html 旧地址。
 旧 .html 报告会随着 Google 重新读取 sitemap 和重新抓取逐步消失。
 ```
+
+用户完成情况：
+
+```text
+用户反馈：上面的部署后操作已经做了。
+也就是 Day 5 的 sitemap 检查、Search Console 重新处理、无 .html URL 检查事项已经执行。
+Day 5 今日任务可以收尾。
+```
+
+## 42. Day 5 收尾与 Day 6 计划
+
+操作日期：2026-05-20
+
+今日结论：
+
+```text
+今天的核心任务已经完成。
+今天不再新增页面、不再重复提交 sitemap、不再申请 AdSense。
+今天的价值不是流量增长，而是修掉了可能阻碍索引的 URL 规范问题。
+```
+
+明天需要打开的网站：
+
+```text
+1. Google Search Console
+   https://search.google.com/search-console
+
+2. Google Analytics
+   https://analytics.google.com/
+
+3. Bing Webmaster Tools
+   https://www.bing.com/webmasters/
+
+4. 线上 sitemap
+   https://sellcopytools.com/sitemap.xml
+```
+
+明天检查顺序：
+
+```text
+1. Google Search Console -> 效果
+   看总曝光是否仍为 4，是否新增查询词，是否出现点击。
+
+2. Google Search Console -> 网页
+   看已编入索引是否仍为 2，未编入索引是否仍为 34。
+   看“重定向错误”是否开始减少。
+
+3. Google Search Console -> 网址检查
+   检查无 .html 版本：
+   https://sellcopytools.com/tools/product-description-generator
+   https://sellcopytools.com/tools/etsy-title-generator
+
+4. Google Analytics -> 报告 / 页面和屏幕
+   看首页、Etsy、Amazon、Shopify、Product Description 页面是否有访问。
+
+5. Google Analytics -> 事件
+   看是否出现 generate_copy / copy_generated_output。
+
+6. Bing Webmaster Tools -> Search Performance / Sitemaps
+   看是否仍提示等待数据，或是否已经出现曝光/点击。
+```
+
+明天决策规则：
+
+```text
+如果 Search Console 仍无变化：
+只记录数据，不大改。
+
+如果新增查询词：
+优先围绕新增查询词优化对应页面标题、H1、FAQ、示例。
+
+如果某个页面有访问但没有生成事件：
+优化该页面首屏按钮和输入提示。
+
+如果 product-description-generator / etsy-title-generator 仍显示重定向错误：
+继续检查线上 sitemap 是否已被 Google 重新读取，不重复提交旧 .html 地址。
+```
