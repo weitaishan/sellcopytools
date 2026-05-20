@@ -2308,3 +2308,77 @@ Google Search Console
 DAILY_OPERATING_LOG_CN.md 新增 Day 5 - 2026-05-20。
 DAILY_OPERATING_LOG_CN.md 顶部最新状态更新为 Day 5。
 ```
+
+## 41. 修复 Search Console 重定向错误
+
+操作日期：2026-05-20
+
+用户反馈：
+
+```text
+在 Google Search Console 网址检查中：
+https://sellcopytools.com/tools/product-description-generator.html
+https://sellcopytools.com/tools/etsy-title-generator.html
+均显示“网页未编入索引：重定向错误”。
+```
+
+排查结果：
+
+```text
+Codex 使用 curl 检查线上 URL。
+.html 地址返回 HTTP/2 307。
+Cloudflare 将 .html 地址重定向到无 .html 地址。
+示例：
+https://sellcopytools.com/tools/product-description-generator.html
+-> https://sellcopytools.com/tools/product-description-generator
+
+https://sellcopytools.com/tools/etsy-title-generator.html
+-> https://sellcopytools.com/tools/etsy-title-generator
+```
+
+根因判断：
+
+```text
+页面本身不是坏了。
+问题是 sitemap.xml、canonical、站内链接使用 .html 地址。
+但线上最终可访问地址是无 .html 地址。
+Google 从 sitemap 抓取 .html 后遇到跳转，因此报告重定向错误。
+```
+
+执行修复：
+
+```text
+将 sitemap.xml 中所有 .html URL 改为无 .html URL。
+将所有 HTML 页面的 canonical 改为无 .html URL。
+将站内链接改为无 .html URL。
+保留 /tools/ 目录 URL。
+补充 /favicon.svg，避免所有页面请求 favicon 时产生 404。
+```
+
+验证结果：
+
+```text
+sitemap URL 数量：34
+内部链接数量：446
+缺失链接：0
+检查 sitemap / canonical / href 后，未发现继续指向 .html 的索引目标链接。
+```
+
+部署后用户需要操作：
+
+```text
+1. 等 GitHub / Cloudflare 部署完成。
+2. 打开 https://sellcopytools.com/sitemap.xml，确认 URL 已无 .html。
+3. 在 Google Search Console -> 站点地图，重新提交 sitemap.xml。
+4. 在 Google Search Console -> 网址检查，检查无 .html 地址：
+   https://sellcopytools.com/tools/product-description-generator
+   https://sellcopytools.com/tools/etsy-title-generator
+5. 如果测试实际网址通过，再点击“请求编入索引”。
+```
+
+注意：
+
+```text
+不要继续请求 .html 旧地址。
+旧 .html 报告会随着 Google 重新读取 sitemap 和重新抓取逐步消失。
+```
