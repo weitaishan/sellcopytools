@@ -2529,3 +2529,31 @@ Google Analytics -> 报告 -> 用户获取
 两个重点页面已从“重定向错误”变成 URL 检查已编入索引，这是正向进展。
 今天不新增大量页面、不申请 AdSense、不重复提交 sitemap。
 ```
+
+后续用户反馈：
+
+```text
+用户确认 GA 事件里没有 generate_copy / copy_generated_output。
+用户反馈最近几天没有新的访问。
+```
+
+判断：
+
+```text
+没有自定义生成事件，不一定是埋点错误。
+代码中已存在 generate_copy 和 copy_generated_output 事件。
+当前更可能是没有用户真正点击生成或复制。
+如果没有真实访问，继续等待不会产生行为数据。
+今天需要从“等待收录”切换到“少量种子分发”。
+```
+
+执行：
+
+```text
+Codex 新增 PROMOTION_SEED_PLAN_CN.md。
+文档写入 SellCopy Tools 的产品资料、提交文案、今日 3 个免费目录、提交后观察指标。
+今日建议用户提交：
+1. SaaSFolk
+2. SaaSCity
+3. Zearches
+```

@@ -560,6 +560,9 @@ sales copy generator 展示 1，点击 0。
 用户反馈“网页索引”汇总仍为 2，Codex 判断这是汇总页延迟，不和 URL 检查矛盾。
 用户提供 Google Analytics 首页概览截图，询问应该在哪里看事件和页面数据。
 Codex 记录 GA 当前概览数据，并给出查看路径。
+用户进一步反馈：GA 事件中没有 generate_copy / copy_generated_output，最近几天也没有访问。
+Codex 判断不能只等待自然搜索，需要开始第一批人工种子流量和外链提交。
+Codex 创建 PROMOTION_SEED_PLAN_CN.md，写入今日 3 个免费目录提交计划和可复制文案。
 ```
 
 ### Google Analytics 查看路径
@@ -601,7 +604,9 @@ Google Analytics -> 左侧“报告”图标 -> 用户获取
 确认两个重点页面 URL 检查显示已编入索引，是正向进展。
 确认 Search Console 汇总数据仍延迟，暂不因汇总仍为 2 而误判失败。
 明确 Google Analytics 后续查看路径。
-今日不做代码大改。
+确认 GA 没有自定义生成事件，主要原因是最近没有真实生成行为。
+今日新增第一批种子流量提交计划，不做代码大改。
+用户今天需要按 PROMOTION_SEED_PLAN_CN.md 提交 3 个免费目录。
 ```
 
 ### 明日计划
@@ -614,6 +619,8 @@ Google Analytics -> 左侧“报告”图标 -> 用户获取
 检查 product-description-generator / etsy-title-generator 是否仍显示已编入索引。
 检查 Google Analytics -> 页面和屏幕，记录 Top 5 页面。
 检查 Google Analytics -> 事件，确认是否出现 generate_copy / copy_generated_output。
+检查是否完成 SaaSFolk / SaaSCity / Zearches 提交。
+检查 GA -> 用户获取是否出现 Referral。
 如果仍无新查询词，只记录数据，不大改。
 如果某个页面有访问但无生成事件，再优化该页面首屏和按钮文案。
 ```
@@ -628,4 +635,6 @@ Google Analytics -> 左侧“报告”图标 -> 用户获取
 不申请 AdSense。
 不批量注册 Affiliate。
 不大批量新增页面。
+不买付费目录提交服务。
+不在社区硬发广告。
 ```
