@@ -47,28 +47,28 @@ DAILY_OPERATING_LOG_CN.md
 当前最新记录：
 
 ```text
-Day 5 - 2026-05-20
+Day 6 - 2026-05-21
 ```
 
 今天总结位置：
 
 ```text
-Day 5 - 2026-05-20 -> 今日执行结果
+Day 6 - 2026-05-21 -> 今日执行结果
 ```
 
 明天计划位置：
 
 ```text
-Day 5 - 2026-05-20 -> 明日计划
+Day 6 - 2026-05-21 -> 明日计划
 ```
 
 明天是：
 
 ```text
-Day 6 - 2026-05-21
+Day 7 - 2026-05-22
 ```
 
-Day 6 开始时要做：
+Day 7 开始时要做：
 
 ```text
 检查 Search Console -> 效果：总曝光、查询词、排名页面。
@@ -86,7 +86,7 @@ Day 2 - 2026-05-16：Bing 接入、竞品观察、生成器升级、重点页面
 Day 3 - 2026-05-18：出现 4 次 Google 展示，首页按 sales copy 查询词微调，补强 Product / Etsy 页面。
 Day 4 - 2026-05-19：记录数据，补强首页 FAQ、Amazon、Shopify 页面，建立每日运营 skill 和完整记录规则。
 Day 5 - 2026-05-20：记录数据，无明显 SEO 变化；建议只做少量核心 URL 检查/请求索引，不大改。
-Day 6 - 2026-05-21：待执行，先看数据，再决定是否优化。
+Day 6 - 2026-05-21：确认重点无 .html URL 已可索引/已索引；GSC 汇总仍延迟；记录 GA 查看路径。
 ```
 
 ## Day 1 - 2026-05-15
@@ -495,5 +495,137 @@ Google Search Console 中重新处理 sitemap / URL 检查
 不重复大量提交 sitemap。
 不再请求 .html 旧 URL。
 不一次性请求所有 34 个未索引 URL。
+不大批量新增页面。
+```
+
+## Day 6 - 2026-05-21
+
+### 昨天/之前进度
+
+```text
+Day 5 修复了 Google Search Console 的“重定向错误”根因。
+sitemap.xml、canonical、站内链接已统一为无 .html 的最终 URL。
+用户已经完成部署后 sitemap 检查、重新提交/网址检查事项。
+```
+
+### 今日数据
+
+```text
+Google Search Console：
+总曝光次数：4
+总点击次数：0
+查询词：
+- sales copy ai：展示 1，点击 0
+- sales copy generator：展示 1，点击 0
+已编入索引汇总：2
+备注：用户检查 product-description-generator 和 etsy-title-generator 两个无 .html 地址时，发现 URL 检查显示已编入索引。
+```
+
+```text
+Google Analytics：
+首页概览显示过去 7 天：
+活跃用户：48
+事件数：257
+关键事件数：0
+新用户数：47
+截图中昨日按国家/地区：United States 2、Poland 1、China 0。
+截图中昨日页面和屏幕：Free Sales Copy Generator 3，Amazon / Shopify 页面昨日为 0。
+流量来源：Direct 53，Unassigned 2。
+```
+
+```text
+Bing Webmaster：
+Search Performance 截图显示 3 个月维度下点击 0、展示 0。
+当前 Bing 仍未提供可用自然搜索数据。
+```
+
+### 今日判断
+
+```text
+GSC 总曝光仍为 4，不代表失败。
+新站早期 Google 汇总数据会延迟，URL 检查结果通常比“网页索引”汇总更快。
+两个重点页面在 URL 检查里已显示已编入索引，这是昨天 URL 规范修复后的正向信号。
+目前仍不适合大批量新增页面或申请 AdSense。
+今天重点是学会正确查看 GA 页面和事件，并记录数据。
+```
+
+### 今日操作记录
+
+```text
+用户反馈 2026-05-21 数据：
+Search Console 总曝光仍为 4。
+sales copy ai 展示 1，点击 0。
+sales copy generator 展示 1，点击 0。
+用户检查两个无 .html 地址，发现 URL 检查显示已编入索引。
+用户反馈“网页索引”汇总仍为 2，Codex 判断这是汇总页延迟，不和 URL 检查矛盾。
+用户提供 Google Analytics 首页概览截图，询问应该在哪里看事件和页面数据。
+Codex 记录 GA 当前概览数据，并给出查看路径。
+```
+
+### Google Analytics 查看路径
+
+```text
+要看页面访问：
+Google Analytics -> 左侧“报告”图标 -> 互动度 -> 页面和屏幕
+重点看：
+- 网页标题和屏幕类
+- 浏览次数
+- 用户数
+- 平均互动时长
+```
+
+```text
+要看生成器事件：
+Google Analytics -> 左侧“报告”图标 -> 互动度 -> 事件
+重点找：
+- generate_copy
+- copy_generated_output
+如果没有这两个事件，说明用户还没有真正点击生成按钮，或事件数据还没处理出来。
+```
+
+```text
+要看访问来源：
+Google Analytics -> 左侧“报告”图标 -> 用户获取
+或 Google Analytics -> 查看报告概况 -> 查看流量获取情况
+重点看：
+- Direct
+- Organic Search
+- Referral
+- Unassigned
+```
+
+### 今日执行结果
+
+```text
+今日完成数据复盘。
+确认两个重点页面 URL 检查显示已编入索引，是正向进展。
+确认 Search Console 汇总数据仍延迟，暂不因汇总仍为 2 而误判失败。
+明确 Google Analytics 后续查看路径。
+今日不做代码大改。
+```
+
+### 明日计划
+
+```text
+检查 Search Console 总曝光是否超过 4。
+检查 sales copy ai / sales copy generator 是否继续有展示。
+检查是否新增查询词。
+检查“网页索引”汇总是否从 2 增加。
+检查 product-description-generator / etsy-title-generator 是否仍显示已编入索引。
+检查 Google Analytics -> 页面和屏幕，记录 Top 5 页面。
+检查 Google Analytics -> 事件，确认是否出现 generate_copy / copy_generated_output。
+如果仍无新查询词，只记录数据，不大改。
+如果某个页面有访问但无生成事件，再优化该页面首屏和按钮文案。
+```
+
+### 不做事项
+
+```text
+不重复提交 sitemap。
+不请求 .html 旧地址。
+不因为 GSC 汇总延迟而乱改页面。
+不刷访问。
+不申请 AdSense。
+不批量注册 Affiliate。
 不大批量新增页面。
 ```
