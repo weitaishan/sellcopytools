@@ -2557,3 +2557,21 @@ Codex 新增 PROMOTION_SEED_PLAN_CN.md。
 2. SaaSCity
 3. Zearches
 ```
+
+补充：
+
+```text
+用户反馈 SaaSFolk 表单比预期更详细，需要 Cover Banner、Links 等字段。
+Codex 新增：
+assets/cover-banner.svg
+assets/cover-banner.png
+
+并在 PROMOTION_SEED_PLAN_CN.md 中补充：
+- Cover Banner 上传文件和线上 URL
+- Links 字段填法
+- SaaSFolk 逐项填写建议
+- Long Description
+- Tags
+- Pricing / Status / Launch Date
+- 哪些社交链接不要乱填
+```

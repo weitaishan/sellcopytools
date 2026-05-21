@@ -85,10 +85,63 @@ Logo / 图标：
 https://sellcopytools.com/favicon.svg
 ```
 
+Cover Banner：
+
+```text
+优先上传本地 PNG：
+assets/cover-banner.png
+
+部署后也可以使用线上 URL：
+https://sellcopytools.com/assets/cover-banner.png
+```
+
+备用 SVG：
+
+```text
+https://sellcopytools.com/assets/cover-banner.svg
+```
+
 联系邮箱：
 
 ```text
 contact@sellcopytools.com
+```
+
+Links 可填写：
+
+```text
+Website:
+https://sellcopytools.com/
+
+Contact:
+mailto:contact@sellcopytools.com
+
+Sitemap:
+https://sellcopytools.com/sitemap.xml
+
+Privacy:
+https://sellcopytools.com/legal/privacy
+
+Terms:
+https://sellcopytools.com/legal/terms
+
+GitHub:
+如果表单要求 GitHub，先留空；不要乱填私人仓库，除非用户愿意公开。
+
+X / Twitter:
+没有官方账号就留空。
+
+LinkedIn:
+没有官方主页就留空。
+
+Discord / Slack:
+没有社区就留空。
+
+Documentation:
+可以填 https://sellcopytools.com/tools/
+
+Demo:
+可以填 https://sellcopytools.com/
 ```
 
 ## 今天提交 3 个站
@@ -108,6 +161,93 @@ https://www.saasfolk.com/
 如果需要登录，用 Google 登录。
 按表单填写产品资料。
 分类优先选 AI Tools / Marketing / E-Commerce。
+```
+
+SaaSFolk 逐项填写建议：
+
+```text
+Product Name:
+SellCopy Tools
+
+Tagline / One-liner:
+Free ecommerce copy generators for product descriptions, ads, emails, SEO titles, and marketplace listings.
+
+Website URL:
+https://sellcopytools.com/
+
+Short Description:
+Free ecommerce copy generators for product descriptions, ads, emails, SEO titles, Amazon bullets, Etsy titles, and Shopify product copy.
+
+Long Description:
+SellCopy Tools is a free ecommerce copywriting toolkit for sellers, marketers, and small online stores. It helps users generate product descriptions, ad headlines, email blurbs, SEO titles, meta descriptions, Amazon bullet points, Etsy title ideas, Shopify product descriptions, and other sales copy without signup. The site is built as a fast, lightweight web tool with dedicated pages for marketplace and ecommerce copy workflows.
+
+Category:
+Marketing
+如果没有 Marketing，选 AI Tools。
+如果可以多选，再加 E-Commerce。
+
+Pricing:
+Free
+
+Status:
+Live / Launched
+
+Launch Date:
+2026-05-15
+
+Logo:
+https://sellcopytools.com/favicon.svg
+如果它要求上传文件，用本地 favicon.svg。
+
+Cover Banner:
+优先上传 assets/cover-banner.png。
+如果支持 URL，填 https://sellcopytools.com/assets/cover-banner.png。
+
+Tags:
+ecommerce
+copywriting
+marketing
+seo
+shopify
+amazon
+etsy
+ads
+email marketing
+product descriptions
+
+Founder / Maker:
+如果它要求个人名，可以填 Albert。
+如果不想填个人名，填 SellCopy Tools Team。
+
+Founder Email / Verification Email:
+contact@sellcopytools.com
+
+Twitter / X:
+没有官方账号，留空。
+
+LinkedIn:
+没有官方主页，留空。
+
+GitHub:
+如果不想公开仓库，留空。
+
+Documentation:
+https://sellcopytools.com/tools/
+
+Demo:
+https://sellcopytools.com/
+
+Support / Contact:
+contact@sellcopytools.com
+```
+
+不建议填写：
+
+```text
+不要填不存在的社交账号。
+不要填个人私人社交链接，除非你愿意公开。
+不要把 Cloudflare workers.dev 临时地址填进去，只填正式域名。
+不要用 .html 旧地址。
 ```
 
 状态记录：

@@ -563,6 +563,9 @@ Codex 记录 GA 当前概览数据，并给出查看路径。
 用户进一步反馈：GA 事件中没有 generate_copy / copy_generated_output，最近几天也没有访问。
 Codex 判断不能只等待自然搜索，需要开始第一批人工种子流量和外链提交。
 Codex 创建 PROMOTION_SEED_PLAN_CN.md，写入今日 3 个免费目录提交计划和可复制文案。
+用户反馈 SaaSFolk 需要更详细的 Cover Banner、Links 等资料。
+Codex 生成 assets/cover-banner.svg 和 assets/cover-banner.png。
+Codex 补充 SaaSFolk 逐项填写建议，包括 Logo、Cover Banner、Links、Tags、Long Description、Pricing、Status。
 ```
 
 ### Google Analytics 查看路径
@@ -606,6 +609,7 @@ Google Analytics -> 左侧“报告”图标 -> 用户获取
 明确 Google Analytics 后续查看路径。
 确认 GA 没有自定义生成事件，主要原因是最近没有真实生成行为。
 今日新增第一批种子流量提交计划，不做代码大改。
+已补充 SaaSFolk 提交素材包和 Cover Banner。
 用户今天需要按 PROMOTION_SEED_PLAN_CN.md 提交 3 个免费目录。
 ```
 

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">SellCopy Tools cover banner</title>
+  <desc id="desc">A dark blue cover banner for SellCopy Tools, a free ecommerce copy generator.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="0.55" stop-color="#164e63"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#dbeafe" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1030" cy="120" r="170" fill="#38bdf8" opacity="0.16"/>
+  <circle cx="116" cy="542" r="180" fill="#22c55e" opacity="0.12"/>
+  <rect x="78" y="74" width="1044" height="482" rx="34" fill="#0f172a" opacity="0.38"/>
+  <g transform="translate(118 112)">
+    <rect x="0" y="0" width="98" height="98" rx="24" fill="#ffffff"/>
+    <path d="M31 67V31c0-4.4 3.6-8 8-8h20l16 16v28c0 4.4-3.6 8-8 8H39c-4.4 0-8-3.6-8-8Z" fill="#2563eb"/>
+    <path d="M59 23v13c0 3.3 2.7 6 6 6h10" fill="#bfdbfe"/>
+    <path d="M40 52h25M40 61h18" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="118" y="270" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="78" font-weight="800" letter-spacing="0">SellCopy Tools</text>
+  <text x="122" y="332" fill="#dbeafe" font-family="Inter, Arial, sans-serif" font-size="33" font-weight="600">Free ecommerce copy generators</text>
+  <text x="122" y="389" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="26">Product descriptions, ads, emails, SEO titles,</text>
+  <text x="122" y="426" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="26">Amazon bullets, Etsy titles, and Shopify copy.</text>
+  <g transform="translate(122 474)">
+    <rect x="0" y="0" width="142" height="46" rx="23" fill="#ffffff"/>
+    <text x="24" y="31" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700">No signup</text>
+    <rect x="160" y="0" width="172" height="46" rx="23" fill="url(#panel)"/>
+    <text x="184" y="31" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700">Free to use</text>
+    <rect x="350" y="0" width="238" height="46" rx="23" fill="#bbf7d0"/>
+    <text x="376" y="31" fill="#052e16" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700">Built for sellers</text>
+  </g>
+  <g transform="translate(790 184)">
+    <rect x="0" y="0" width="268" height="306" rx="24" fill="#ffffff" opacity="0.96"/>
+    <rect x="32" y="42" width="204" height="24" rx="12" fill="#bfdbfe"/>
+    <rect x="32" y="88" width="176" height="18" rx="9" fill="#dbeafe"/>
+    <rect x="32" y="125" width="204" height="18" rx="9" fill="#dbeafe"/>
+    <rect x="32" y="162" width="142" height="18" rx="9" fill="#dbeafe"/>
+    <rect x="32" y="213" width="204" height="50" rx="15" fill="#2563eb"/>
+    <text x="75" y="245" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700">Generate Copy</text>
+  </g>
+</svg>
