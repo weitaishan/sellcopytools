@@ -2575,3 +2575,50 @@ assets/cover-banner.png
 - Pricing / Status / Launch Date
 - 哪些社交链接不要乱填
 ```
+
+## 44. Day 7 后台代查与记录
+
+时间：
+
+```text
+2026-05-22
+```
+
+背景：
+
+```text
+用户表示 Google Search Console、Google Analytics、Bing 等网站都已经登录好，希望 Codex 直接代查并记录。
+```
+
+执行：
+
+```text
+Codex 首先尝试使用 Chrome 专用自动化通道连接用户已登录的 Chrome。
+检查结果显示 Chrome 正在运行，但当前 Chrome profile 未安装 Codex Chrome Extension，因此专用自动化通道不可用。
+Codex 改用屏幕级 Chrome 操作查看后台。
+```
+
+已确认数据：
+
+```text
+Google Search Console -> sellcopytools.com -> 概述：
+网页搜索点击：0
+网页索引：35 个网页未编入索引，2 个网页已编入索引
+HTTPS：4 个 HTTPS，0 个非 HTTPS
+```
+
+未采用数据：
+
+```text
+Search Console 效果页操作过程中，旧的 Schemato Search Console 标签多次抢占资源。
+Google Analytics 打开后当前属性为 Schemato，不是 SellCopyTools。
+因此今天不采用 Schemato 的 GSC / GA 数据，不写入 SellCopyTools 的运营判断。
+```
+
+结论：
+
+```text
+Day 7 只记录已可靠确认的 SellCopyTools GSC 概述数据。
+今日不做代码修改，不做 SEO 页面调整，不重复提交 sitemap。
+后续要可靠代查后台，需要安装并启用 Codex Chrome Extension，或在 Codex 操作期间保持 Chrome 不切换标签。
+```

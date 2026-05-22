@@ -47,28 +47,28 @@ DAILY_OPERATING_LOG_CN.md
 当前最新记录：
 
 ```text
-Day 6 - 2026-05-21
+Day 7 - 2026-05-22
 ```
 
 今天总结位置：
 
 ```text
-Day 6 - 2026-05-21 -> 今日执行结果
+Day 7 - 2026-05-22 -> 今日执行结果
 ```
 
 明天计划位置：
 
 ```text
-Day 6 - 2026-05-21 -> 明日计划
+Day 7 - 2026-05-22 -> 明日计划
 ```
 
 明天是：
 
 ```text
-Day 7 - 2026-05-22
+Day 8 - 2026-05-23
 ```
 
-Day 7 开始时要做：
+Day 8 开始时要做：
 
 ```text
 检查 Search Console -> 效果：总曝光、查询词、排名页面。
@@ -87,6 +87,7 @@ Day 3 - 2026-05-18：出现 4 次 Google 展示，首页按 sales copy 查询词
 Day 4 - 2026-05-19：记录数据，补强首页 FAQ、Amazon、Shopify 页面，建立每日运营 skill 和完整记录规则。
 Day 5 - 2026-05-20：记录数据，无明显 SEO 变化；建议只做少量核心 URL 检查/请求索引，不大改。
 Day 6 - 2026-05-21：确认重点无 .html URL 已可索引/已索引；GSC 汇总仍延迟；记录 GA 查看路径。
+Day 7 - 2026-05-22：Codex 代查后台，确认 GSC 概述仍为 0 点击、2 已索引；GA/Bing 因 Chrome 自动化通道不可用暂未可靠读取。
 ```
 
 ## Day 1 - 2026-05-15
@@ -641,4 +642,103 @@ Google Analytics -> 左侧“报告”图标 -> 用户获取
 不大批量新增页面。
 不买付费目录提交服务。
 不在社区硬发广告。
+```
+
+## Day 7 - 2026-05-22
+
+### 昨天/之前进度
+
+```text
+Day 6 确认两个重点页面在 URL 检查里已显示已编入索引。
+Day 6 新增 PROMOTION_SEED_PLAN_CN.md，准备 SaaSFolk / SaaSCity / Zearches 三个免费目录提交。
+Day 6 补充 SaaSFolk 提交素材，包括 assets/cover-banner.svg 和 assets/cover-banner.png。
+```
+
+### 今日数据
+
+```text
+Google Search Console：
+Codex 使用用户已登录的 Chrome 会话查看 sellcopytools.com。
+Search Console -> 概述：
+- 网页搜索点击：0
+- 网页索引：35 个网页未编入索引，2 个网页已编入索引
+- HTTPS：4 个 HTTPS，0 个非 HTTPS
+
+Search Console -> 效果：
+- 未能可靠读取 SellCopyTools 的效果明细。
+- 原因：当前 Chrome 未安装 Codex Chrome Extension，专用自动化通道不可用；屏幕级操作过程中旧的 Schemato Search Console 标签多次抢占资源。
+- 因此不记录 Schemato 的曝光、点击、查询词数据。
+```
+
+```text
+Google Analytics：
+Codex 打开 GA 时发现当前已选属性为 Schemato，不是 SellCopyTools。
+GA 页面中可见的 Schemato 活跃用户、事件、页面和来源数据不采用、不记录为 SellCopyTools 数据。
+SellCopyTools GA 今日数据：未可靠读取。
+```
+
+```text
+Bing Webmaster：
+今日未可靠读取。
+```
+
+### 今日判断
+
+```text
+GSC 概述里已编入索引仍为 2，说明索引汇总暂时没有新增。
+已确认的数据不足以判断今天是否有新查询词或新曝光。
+今天不应该根据不可靠的 Schemato 数据优化 SellCopyTools。
+当前最重要的是保证后续后台读取准确：要么安装/启用 Codex Chrome Extension，要么在代查期间保持 Chrome 不切换标签。
+```
+
+### 今日操作记录
+
+```text
+用户要求 Codex 直接代查已登录后台并记录。
+Codex 尝试连接 Chrome 专用自动化通道，发现当前 Chrome profile 未安装 Codex Chrome Extension。
+Codex 改用屏幕级 Chrome 操作查看后台。
+Codex 在 Search Console 资源下拉框中切换到 sellcopytools.com，并读取概述数据：
+0 次网页搜索点击，35 个网页未编入索引，2 个网页已编入索引，HTTPS 4 / 非 HTTPS 0。
+Codex 尝试进入 Search Console 效果页，但旧的 Schemato 资源标签多次抢占，未记录该页数据。
+Codex 打开 Google Analytics，发现当前属性是 Schemato；Codex 明确不采用 Schemato 的 GA 数据。
+Codex 未继续强行操作，避免误把其他项目数据写入 SellCopyTools 日志。
+```
+
+### 今日执行结果
+
+```text
+今日完成 SellCopyTools 的 GSC 概述部分代查。
+今日已确认索引汇总仍为 2 已索引，35 未索引。
+今日未完成 GSC 效果明细、SellCopyTools GA、Bing 的可靠读取。
+今日不做代码修改、不做 SEO 页面调整、不提交 sitemap。
+```
+
+### 明日计划
+
+```text
+优先解决后台代查稳定性：
+1. 安装并启用 Codex Chrome Extension，或在 Codex 代查时暂时不要切换 Chrome 标签。
+2. 重新检查 Search Console -> 效果：总点击、总曝光、CTR、平均排名、查询词。
+3. 重新检查 Search Console -> 网页：已编入索引、未编入索引。
+4. 重新检查 Search Console -> 站点地图：状态、已发现网页。
+5. 在 GA 通用选择器里选择 SellCopy Tools -> SellCopy Tools 属性，再记录活跃用户、事件、页面、来源。
+6. 检查 Bing Webmaster -> Sitemaps / Search Performance。
+7. 检查 SaaSFolk / SaaSCity / Zearches 是否已提交或等待审核。
+
+如果仍没有新查询词，只记录数据，不大改。
+如果出现 SellCopyTools 的 Referral 或真实生成事件，再看对应来源和页面。
+```
+
+### 不做事项
+
+```text
+不采用 Schemato 的后台数据。
+不重复提交 sitemap。
+不请求 .html 旧地址。
+不因为汇总仍为 2 就乱改页面。
+不刷访问。
+不申请 AdSense。
+不批量注册 Affiliate。
+不大批量新增页面。
+不买付费目录提交服务。
 ```
