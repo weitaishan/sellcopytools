@@ -4,11 +4,19 @@ SellCopy Tools is a static ecommerce copywriting toolkit with free, browser-base
 
 The project is built as a zero-backend website: plain HTML, CSS, and JavaScript. It can be deployed to GitHub Pages, Cloudflare Pages, Netlify, Vercel, or any static hosting service.
 
+![SellCopy Tools preview](assets/cover-banner.png)
+
 ## Live Demo
 
-```text
-https://sellcopytools.com/
-```
+Visit [sellcopytools.com](https://sellcopytools.com/) to try the live generator.
+
+## At a Glance
+
+- **Stack:** HTML, CSS, and vanilla JavaScript
+- **Backend:** none
+- **Runtime cost:** static hosting only
+- **Primary audience:** ecommerce founders, marketers, marketplace sellers, and small stores
+- **Core workflow:** enter product details, generate copy, edit, and paste into a store or campaign
 
 ## Features
 
@@ -19,6 +27,15 @@ https://sellcopytools.com/
 - Lightweight event hooks for analytics
 - SEO-friendly static pages, canonical URLs, sitemap, and robots.txt
 - Legal pages for privacy, terms, and affiliate disclosure
+
+## Featured Generators
+
+- [Product Description Generator](https://sellcopytools.com/tools/product-description-generator)
+- [Etsy Title Generator](https://sellcopytools.com/tools/etsy-title-generator)
+- [Etsy Product Description Generator](https://sellcopytools.com/tools/etsy-product-description-generator)
+- [Amazon Product Title Generator](https://sellcopytools.com/tools/amazon-product-title-generator)
+- [Shopify Product Description Generator](https://sellcopytools.com/tools/shopify-product-description-generator)
+- [SEO Meta Description Generator](https://sellcopytools.com/tools/seo-meta-description-generator)
 
 ## Tool Categories
 
@@ -86,6 +103,22 @@ copy_generated_output
 ```
 
 If `window.gtag` is not available, the generator still works normally.
+
+## Suggested Repository Topics
+
+If you fork or publish a similar project, useful GitHub topics include:
+
+```text
+ecommerce
+copywriting
+seo
+static-site
+marketing-tools
+shopify
+amazon
+etsy
+javascript
+```
 
 ## Deployment
 
