@@ -1,6 +1,34 @@
 const form = document.querySelector("#copyForm");
 const output = document.querySelector("#output");
 const copyButton = document.querySelector("#copyButton");
+const presetButtons = document.querySelectorAll("[data-preset]");
+
+const presets = {
+  shopify: {
+    productName: "CloudSoft Bamboo Pajama Set",
+    features: "Breathable bamboo viscose, relaxed fit, gift-ready packaging, soft waistband, machine washable",
+    audience: "busy shoppers looking for comfortable sleepwear",
+    tone: "Friendly",
+    platform: "Shopify",
+    benefit: "a softer bedtime routine"
+  },
+  amazon: {
+    productName: "TrailPro Insulated Water Bottle",
+    features: "Keeps drinks cold for 24 hours, leakproof lid, stainless steel body, cup holder friendly, powder-coated grip",
+    audience: "hikers, commuters, and gym customers",
+    tone: "Bold",
+    platform: "Amazon",
+    benefit: "cold drinks that last through the day"
+  },
+  etsy: {
+    productName: "Personalized Linen Recipe Binder",
+    features: "Custom name cover, refillable recipe pages, linen texture, divider tabs, bridal shower gift",
+    audience: "home cooks and gift shoppers",
+    tone: "Premium",
+    platform: "Etsy",
+    benefit: "a keepsake for family recipes"
+  }
+};
 
 const toneMap = {
   Premium: ["refined", "polished", "designed for customers who expect more"],
@@ -56,6 +84,7 @@ function makeTags(values, features) {
 }
 
 function trackEvent(name, params = {}) {
+  console.info("[SellCopy Tools event]", name, params);
   if (typeof window.gtag === "function") {
     window.gtag("event", name, params);
   }
@@ -156,6 +185,31 @@ function getValues() {
     benefit: document.querySelector("#benefit").value.trim() || "a better everyday experience"
   };
 }
+
+function setField(selector, value) {
+  const field = document.querySelector(selector);
+  if (field) field.value = value;
+}
+
+presetButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const preset = presets[button.dataset.preset];
+    if (!preset) return;
+
+    setField("#productName", preset.productName);
+    setField("#features", preset.features);
+    setField("#audience", preset.audience);
+    setField("#tone", preset.tone);
+    setField("#platform", preset.platform);
+    setField("#benefit", preset.benefit);
+
+    render(generateCopy(getValues()));
+    trackEvent("select_copy_preset", {
+      preset: button.dataset.preset,
+      platform: preset.platform
+    });
+  });
+});
 
 form?.addEventListener("submit", (event) => {
   event.preventDefault();

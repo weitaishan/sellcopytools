@@ -4,6 +4,12 @@ SellCopy Tools is a static ecommerce copywriting toolkit with free, browser-base
 
 The project is built as a zero-backend website: plain HTML, CSS, and JavaScript. It can be deployed to GitHub Pages, Cloudflare Pages, Netlify, Vercel, or any static hosting service.
 
+## Live Demo
+
+```text
+https://sellcopytools.com/
+```
+
 ## Features
 
 - Free ecommerce sales copy generator on the homepage
