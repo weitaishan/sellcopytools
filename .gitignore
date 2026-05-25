@@ -1,2 +1,16 @@
 *.zip
 .DS_Store
+
+# Local/private operating notes
+sellcopytools-private-notes/
+private/
+notes/
+*_CN.md
+DATA_CHECK_MANUAL_CN.md
+DAILY_OPERATING_LOG_CN.md
+OPERATION_LOG_CN.md
+
+# Local environment files
+.env
+.env.*
+*.local

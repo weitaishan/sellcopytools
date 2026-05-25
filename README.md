@@ -1,38 +1,110 @@
 # SellCopy Tools
 
-A static, free ecommerce copy generator site designed for SEO traffic and display-ad monetization.
+SellCopy Tools is a static ecommerce copywriting toolkit with free, browser-based generators for product descriptions, marketplace titles, ad headlines, email snippets, SEO metadata, and other store marketing copy.
 
-## What this MVP includes
+The project is built as a zero-backend website: plain HTML, CSS, and JavaScript. It can be deployed to GitHub Pages, Cloudflare Pages, Netlify, Vercel, or any static hosting service.
 
-- A usable product copy generator on the homepage
-- A dedicated SEO page for "product description generator"
-- Ad placement boxes ready to replace with AdSense snippets
-- Privacy policy and terms pages
-- `robots.txt` and `sitemap.xml`
-- No backend, database, or API cost
+## Features
 
-## Local preview
+- Free ecommerce sales copy generator on the homepage
+- Dedicated generator pages for Shopify, Amazon, Etsy, ads, email, SEO, and product messaging
+- Client-side copy generation with no database or API key
+- Copy-to-clipboard support
+- Lightweight event hooks for analytics
+- SEO-friendly static pages, canonical URLs, sitemap, and robots.txt
+- Legal pages for privacy, terms, and affiliate disclosure
 
-Open `index.html` in a browser, or run a tiny local server:
+## Tool Categories
+
+- Product descriptions and product benefits
+- Amazon listing titles, descriptions, and bullet points
+- Etsy titles and product descriptions
+- Shopify product titles, descriptions, and meta descriptions
+- Facebook and Google ad copy
+- Email copy and abandoned cart messages
+- SEO titles and meta descriptions
+- Brand slogans and value propositions
+
+## Project Structure
+
+```text
+.
+├── index.html
+├── about.html
+├── contact.html
+├── assets/
+│   ├── analytics.js
+│   ├── app.js
+│   └── styles.css
+├── guides/
+├── legal/
+├── tools/
+├── robots.txt
+└── sitemap.xml
+```
+
+## Local Development
+
+Open `index.html` directly in a browser, or run a local static server:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Then visit `http://localhost:8080`.
+Then visit:
 
-## Launch checklist
+```text
+http://localhost:8080
+```
 
-1. Domain selected: `sellcopytools.com`.
-2. Deploy the folder to Netlify, Vercel, Cloudflare Pages, or GitHub Pages.
-3. Point the domain DNS to your hosting provider.
-4. Create email forwarding for `contact@sellcopytools.com`, or replace it in `legal/privacy.html` with another real contact email.
-5. Add Google Search Console and submit `/sitemap.xml`.
-6. Add Google Analytics or Plausible to measure traffic.
-7. Publish 10-30 more tool or guide pages targeting low-competition keywords.
-8. After the site has real content and traffic, apply for Google AdSense.
-9. Replace `.ad-slot` boxes with AdSense ad code after approval.
+No build step is required.
 
-## Monetization plan
+## Customization
 
-Start with display ads. Once traffic grows, add affiliate links for ecommerce platforms, email tools, SEO tools, or product photography services. Later, add paid features such as batch generation, saved brand voice, CSV export, and API-powered outputs.
+To adapt this project for another ecommerce copywriting site:
+
+1. Update site metadata in `index.html` and each page in `tools/`.
+2. Update canonical URLs in page `<head>` sections.
+3. Replace or remove the analytics snippet in `assets/analytics.js`.
+4. Update `sitemap.xml` with your production URLs.
+5. Update contact details in `contact.html` and `legal/privacy.html`.
+6. Replace placeholder ad slots only after your ad provider approves the site.
+
+## Analytics Events
+
+The frontend emits lightweight Google Analytics events when available:
+
+```text
+generate_copy
+copy_generated_output
+```
+
+If `window.gtag` is not available, the generator still works normally.
+
+## Deployment
+
+Any static host will work. Common options:
+
+- GitHub Pages
+- Cloudflare Pages
+- Netlify
+- Vercel
+
+For best SEO results, deploy with clean URLs, HTTPS, a valid sitemap, and a custom domain.
+
+## Contributing
+
+Contributions are welcome. Useful improvements include:
+
+- New ecommerce generator templates
+- Better copy formulas for existing tools
+- Accessibility improvements
+- Performance improvements
+- SEO metadata fixes
+- Documentation improvements
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for local contribution guidelines.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
