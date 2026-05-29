@@ -1,5 +1,6 @@
 *.zip
 .DS_Store
+submit-assets/
 
 # Local/private operating notes
 sellcopytools-private-notes/
