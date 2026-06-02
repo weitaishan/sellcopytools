@@ -1,0 +1,9 @@
+*** Begin Patch
+*** Update File: tools/etsy-product-description-generator.html
+@@ -151,3 +151,3 @@
+         <h2>Related Etsy tools</h2>
+         <p>Start with the <a href="/tools/etsy-title-generator">Etsy Title Generator</a>, then use this page for the listing body. You can also turn features into scannable selling points with the <a href="/tools/product-bullet-point-generator">Product Bullet Point Generator</a> or refine the offer with the <a href="/tools/product-benefits-generator">Product Benefits Generator</a>.</p>
+-        <p>For title SEO, read <a href="/guides/how-to-write-etsy-titles">How to Write Etsy Titles That Get Found</a>. For description copy examples, browse <a href="/guides/etsy-product-description-examples">Etsy Product Description Examples</a>. For description copy examples, browse <a href="/guides/etsy-product-description-examples">Etsy Product Description Examples</a>.</p>
++        <p>For title SEO, read <a href="/guides/how-to-write-etsy-titles">How to Write Etsy Titles That Get Found</a>. For description copy examples, browse <a href="/guides/etsy-product-description-examples">Etsy Product Description Examples</a>.</p>
+         <p><a class="card" href="/#generator">Open the free generator</a></p>
+*** End Patch
