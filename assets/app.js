@@ -138,10 +138,12 @@ function generateCopy(values) {
 
   if (values.platform === "Etsy") {
     return [
-      ["Etsy Title", `${titleCase(values.productName)} for ${titleCase(values.audience)} - ${titleCase(keyFeatures.slice(0, 2).join(", "))}`],
-      ["Etsy Description", `${description} Mention personalization options, materials, dimensions, processing time, and gift occasions when they apply.`],
+      ["Etsy Listing Title", `${titleCase(values.productName)} for ${titleCase(values.audience)} - ${titleCase(keyFeatures.slice(0, 2).join(", "))}`],
       ["13 Etsy Tag Ideas", makeTags(values, keyFeatures)],
-      ["Occasion Angles", makeBullets([`gift for ${values.audience}`, `everyday use`, `thoughtful personalized present`, `small business favorite`])],
+      ["Etsy Description Opening", `${values.productName} helps ${values.audience} create ${values.benefit}. Mention the product type, material, style, personalization option, and delivery format in the first few sentences so the listing feels specific.`],
+      ["Listing Detail Bullets", makeBullets(keyFeatures, " for this listing")],
+      ["Buyer Questions To Answer", makeBullets(["What is included", "Materials and dimensions", "Personalization steps", "Processing time", "Digital download or shipping details"])],
+      ["Occasion and Use-Case Angles", makeBullets([`gift for ${values.audience}`, `everyday use`, `thoughtful personalized present`, `small business favorite`])],
       ["Short Shop Update", `New in the shop: ${values.productName}, made for ${values.audience} who want ${values.benefit}.`]
     ];
   }
