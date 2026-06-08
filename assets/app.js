@@ -2,6 +2,7 @@ const form = document.querySelector("#copyForm");
 const output = document.querySelector("#output");
 const copyButton = document.querySelector("#copyButton");
 const presetButtons = document.querySelectorAll("[data-preset]");
+const platformField = document.querySelector("#platform");
 
 const presets = {
   shopify: {
@@ -88,6 +89,17 @@ function trackEvent(name, params = {}) {
   if (typeof window.gtag === "function") {
     window.gtag("event", name, params);
   }
+}
+
+function eventContext(values = getValues(), results = []) {
+  return {
+    platform: values.platform,
+    tone: values.tone,
+    feature_count: splitFeatures(values.features).length,
+    result_count: results.length,
+    is_etsy_workflow: values.platform === "Etsy",
+    page_path: window.location.pathname
+  };
 }
 
 function generateCopy(values) {
@@ -205,10 +217,12 @@ presetButtons.forEach((button) => {
     setField("#platform", preset.platform);
     setField("#benefit", preset.benefit);
 
-    render(generateCopy(getValues()));
+    const values = getValues();
+    const results = generateCopy(values);
+    render(results);
     trackEvent("select_copy_preset", {
       preset: button.dataset.preset,
-      platform: preset.platform
+      ...eventContext(values, results)
     });
   });
 });
@@ -216,24 +230,29 @@ presetButtons.forEach((button) => {
 form?.addEventListener("submit", (event) => {
   event.preventDefault();
   const values = getValues();
-  render(generateCopy(values));
-  trackEvent("generate_copy", {
-    platform: values.platform,
-    tone: values.tone
-  });
+  const results = generateCopy(values);
+  render(results);
+  trackEvent("generate_copy", eventContext(values, results));
 });
 
 copyButton?.addEventListener("click", async () => {
   const text = output.innerText.trim();
   if (!text) return;
   await navigator.clipboard.writeText(text);
-  trackEvent("copy_generated_output");
+  trackEvent("copy_generated_output", eventContext());
   copyButton.textContent = "Copied";
   setTimeout(() => {
     copyButton.textContent = "Copy";
   }, 1400);
 });
 
+platformField?.addEventListener("change", () => {
+  const values = getValues();
+  trackEvent("select_copy_platform", eventContext(values));
+});
+
 if (form && output) {
-  render(generateCopy(getValues()));
+  const values = getValues();
+  const results = generateCopy(values);
+  render(results);
 }

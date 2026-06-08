@@ -383,6 +383,20 @@ button:hover {
   transition: transform 160ms ease, border-color 160ms ease;
 }
 
+.card-priority {
+  border-color: #9fcdbc;
+  background: #f1faf5;
+}
+
+.card-kicker {
+  display: block;
+  color: var(--accent-dark);
+  font-size: 0.74rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
 .card:hover {
   transform: translateY(-2px);
   border-color: var(--accent);
